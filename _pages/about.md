@@ -1,8 +1,10 @@
 ---
-layout: single
-author_profile: true
-title: ""
 permalink: /
+title: "Academic Pages is a ready-to-fork GitHub Pages template..."
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
 ---
 
 

@@ -1,6 +1,29 @@
 /* ==========================================================================
    Syntax highlighting
    ========================================================================== */
+/* Limit content width like academic sites */
+.page__content {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+/* Better paragraph spacing */
+.page__content p {
+  margin-bottom: 1.4em;
+}
+
+/* Reduce sidebar width */
+.sidebar {
+  width: 260px;
+}
+
+/* Center content better */
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
 div.highlighter-rouge, figure.highlight {
   position: relative;

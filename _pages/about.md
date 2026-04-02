@@ -10,35 +10,16 @@ redirect_from:
 
 ## Greetings!
 
-I am **Tustee Mazumdar**, a Computer Science undergraduate at the **Asian University for Women** (CGPA: 3.81, Magna Cum Laude).
+I am **Tustee Mazumdar**, a Computer Science undergraduate at the **Asian University for Women** (CGPA: 3.81, Magna Cum Laude). My research interests lie broadly in **Natural Language Processing (NLP)**, with a particular focus on **low-resource languages, multi-task learning, and socially impactful AI systems**. I am especially interested in understanding and modeling complex discourse, such as climate and crisis-related narratives, while addressing challenges in bias, fairness, and robustness in modern AI systems.
 
-My research focuses on **Natural Language Processing (NLP)**, particularly:
-- low-resource language processing  
-- multi-task learning  
-- climate and crisis-related discourse  
-- bias, fairness, and AI safety  
+My recent work has focused on developing **ClimateNet**, a multi-task neural architecture designed to analyze climate change discourse across multiple dimensions, including stance, relevance, and hate speech. This work aims to improve how machine learning models interpret nuanced and socially significant textual data, particularly in contexts where labeled data is scarce or highly complex.
 
-Currently, I am working on **ClimateNet**, a multi-task neural network for analyzing climate change discourse across multiple dimensions, including stance, relevance, and hate speech.
+More broadly, I aim to contribute to the development of **robust, trustworthy, and inclusive AI systems**, especially for underrepresented languages and communities. I am particularly motivated by research that bridges technical innovation with real-world societal impact.
 
 ---
 
-My broader goal is to build **robust and socially impactful AI systems**, especially for underrepresented languages and communities.
+### Recent News ⚡
 
----
-
-## Recent News ⚡
-
-- **[2025]** ClimateNet accepted at *IEEE R10 HTC 2025*  
-- **[2026]** Best Student Thesis Award — Asian University for Women  
-
----
-
-## Research Interests
-
-- Natural Language Processing (NLP)  
-- Large Language Models (LLMs)  
-- Low-resource Languages  
-- Crisis Informatics  
-- Bias & Fairness in AI  
-- Multi-task Learning  
+- **2025** — ClimateNet accepted at *IEEE R10 HTC 2025*  
+- **2026** — Best Student Thesis Award, Asian University for Women  
 

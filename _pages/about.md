@@ -5,7 +5,7 @@ title: ""
 permalink: /
 ---
 
-{% include about.md %}
+{% include_relative about.md %}
 
 ## Greetings!
 

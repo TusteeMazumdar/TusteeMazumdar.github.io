@@ -14,7 +14,7 @@ My research focuses on **Natural Language Processing (NLP)**, particularly:
 - climate and crisis-related discourse  
 - bias, fairness, and AI safety  
 
-Currently, I am working on **ClimateNet**, a multi-task neural network for analyzing climate change discourse across multiple dimensions including stance, relevance, and hate speech.
+Currently, I am working on **ClimateNet**, a multi-task neural network for analyzing climate change discourse across multiple dimensions, including stance, relevance, and hate speech.
 
 ---
 

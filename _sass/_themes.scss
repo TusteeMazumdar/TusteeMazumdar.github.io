@@ -101,4 +101,64 @@ $vimeo-color                : #1ab7ea;
 $vine-color                 : #00bf8f;
 $youtube-color              : #bb0000;
 $xing-color                 : #006567;
-   
+
+/* =========================================================
+   ACADEMIC LAYOUT (Clean, No Hacks)
+   ========================================================= */
+
+/* Main readable content */
+.page__content {
+  max-width: 680px;
+  font-size: 19px;
+  line-height: 1.85;
+}
+
+/* Paragraph spacing */
+.page__content p {
+  margin-bottom: 1.5em;
+}
+
+/* Page container */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Sidebar width */
+.sidebar {
+  width: 240px;
+}
+
+/* Improve spacing between sidebar & content */
+.layout--single .page {
+  display: flex;
+  gap: 40px;
+}
+
+/* Headings */
+.page__content h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.6em;
+}
+
+.page__content h3 {
+  font-size: 1.25rem;
+}
+
+/* Links */
+.page__content a {
+  color: #2a7dbf;
+  text-decoration: none;
+}
+
+.page__content a:hover {
+  text-decoration: underline;
+}
+
+/* Slight readability improvement */
+.page__content {
+  letter-spacing: 0.2px;
+}
+
+

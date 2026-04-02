@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Tustee Mazumdar | Website"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/

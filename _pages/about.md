@@ -2,7 +2,10 @@
 layout: single
 author_profile: true
 title: ""
+permalink: /
 ---
+
+{% include_relative _pages/about.md %}
 
 ## Greetings!
 

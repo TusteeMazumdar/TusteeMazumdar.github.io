@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template..."
+title: "Tustee Mazumdar | Website"
 author_profile: true
 redirect_from: 
   - /about/
@@ -17,8 +17,13 @@ My recent work centers on **ClimateNet**, a multi-task neural architecture desig
 More broadly, my research is motivated by the goal of building **robust, trustworthy, and inclusive AI systems**, particularly for underrepresented languages and communities. I am interested in pursuing graduate studies where I can further explore these areas and contribute to advancing responsible and impactful AI research.
 ---
 
-### Recent News ⚡
 
-- **2025** — ClimateNet accepted at *IEEE R10 HTC 2025*  
-- **2026** — Best Student Thesis Award, Asian University for Women  
+## Recent News
+
+- <span style="color:#b30000;">[2025]</span> 
+  [ClimateNet: A Multi-Faceted Classifier for Analyzing Climate Change Discourse](https://ieeexplore.ieee.org/document/11394695) got accepted at 
+  [IEEE R10 HTC 2025](https://ieee-jp.org/section/tokyo/event/r10htc2025/)
+
+- <span style="color:#b30000;">[2026]</span> 
+  Best Student Thesis Award — Asian University for Women
 

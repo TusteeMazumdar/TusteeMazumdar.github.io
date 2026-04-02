@@ -25,8 +25,7 @@ My broader goal is to build **robust and socially impactful AI systems**, especi
 ## Recent News ⚡
 
 - **[2025]** ClimateNet accepted at *IEEE R10 HTC 2025*  
-- **[2025]** Best Student Thesis Award — Asian University for Women  
-- **[2024]** Exchange Program — University of Tokyo  
+- **[2026]** Best Student Thesis Award — Asian University for Women  
 
 ---
 
@@ -39,10 +38,3 @@ My broader goal is to build **robust and socially impactful AI systems**, especi
 - Bias & Fairness in AI  
 - Multi-task Learning  
 
----
-
-## Contact
-
-- Email: tusteemazumdarcontact@gmail.com  
-- GitHub: https://github.com/TusteeMazumdar  
-- LinkedIn: https://linkedin.com/in/tustee-mazumdar-740a58219  

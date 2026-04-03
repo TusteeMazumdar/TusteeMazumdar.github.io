@@ -8,7 +8,7 @@ paperurl: "https://ieeexplore.ieee.org/document/11394695"
 category: conferences
 ---
 
-**Authors:** **Tustee Mazumdar**, Adrika Chowdhury, Abu Nowshed Chy, Tarem Ahmed  
+**Authors:** Tustee Mazumdar, Adrika Chowdhury, Abu Nowshed Chy, Tarem Ahmed  
 
 **Abstract:**  
 Climate change discourse on social media contains diverse signals such as stance, relevance, humor, and hate speech, which are crucial for understanding public opinion and guiding policy decisions. This paper introduces ClimateNet, a hybrid neural architecture that combines transformer-based models with BiLSTM and an MLP classifier to perform multi-dimensional classification. Experimental results show strong improvements over state-of-the-art methods.

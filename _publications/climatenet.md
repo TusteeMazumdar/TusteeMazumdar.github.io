@@ -1,7 +1,7 @@
 ---
 title: "ClimateNet: A Multi-Faceted Classifier for Analyzing Climate Change Discourse"
 collection: publications
-permalink: /publication/climatenet
+permalink: /publications/climatenet
 date: 2025-01-01
 venue: "IEEE R10 Humanitarian Technology Conference (HTC 2025)"
 paperurl: "https://ieeexplore.ieee.org/document/11394695"
@@ -9,6 +9,7 @@ confurl: "https://ieee-jp.org/section/tokyo/event/r10htc2025/"
 image: "/images/climatenet.png"
 category: conferences
 ---
+
 Authors: Tustee Mazumdar, Adrika Chowdhury, Abu Nowshed Chy, Tarem Ahmed
 Abstract:
 Abstract:

@@ -9,8 +9,6 @@ confurl: "https://ieee-jp.org/section/tokyo/event/r10htc2025/"
 image: "/images/climatenet.png"
 ---
 Authors: Tustee Mazumdar, Adrika Chowdhury, Abu Nowshed Chy, Tarem Ahmed
-
-Abstract:
 Abstract:
 Climate change has emerged as a critical global challenge, generating widespread and complex discourse on social media platforms. Understanding this discourse—spanning stance, relevance, humor, and hate speech—is essential for policymakers and researchers aiming to capture diverse public perspectives. However, prior work has largely focused on isolated aspects of this problem, overlooking its inherently multi-dimensional nature.
 

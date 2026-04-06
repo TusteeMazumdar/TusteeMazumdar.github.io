@@ -14,5 +14,4 @@ Authors: Tustee Mazumdar<sup>1,§</sup>, Adrika Chowdhury<sup>1,§</sup>, Abu No
 Abstract:
 Abstract:
 Climate change discourse on social media contains diverse signals such as stance, relevance, humor, and hate speech, which are crucial for understanding public opinion and guiding policy decisions. This paper introduces Climatefiet, a hybrid neural architecture that combines transformer-based models with BILSTM and an MLP classifier to perform multi-dimensional Classification. Experimental results show strong improvements over state-of-the-art methods.
-
 ---

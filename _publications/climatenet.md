@@ -6,7 +6,7 @@ date: 2025-01-01
 venue: "IEEE R10 Humanitarian Technology Conference (HTC 2025)"
 paperurl: "https://ieeexplore.ieee.org/document/11394695"
 confurl: "https://ieee-jp.org/section/tokyo/event/r10htc2025/"
-image: "/images/Screenshot 2026-04-06 135147.png
+image: "/images/climatenet.png"
 category: conferences
 ---
 

@@ -1,10 +1,19 @@
+---
+layout: single
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+## Conference Papers
+
 {% for post in site.publications reversed %}
 
 <div style="margin-bottom: 30px;">
 
   <!-- Title -->
   <h3 style="margin-bottom: 4px;">
-    <a href="{{ post.paperurl }}">{{ post.title }}</a>
+    <a href="{{ post.url }}">{{ post.title }}</a>
   </h3>
 
   <!-- Venue -->
@@ -40,13 +49,14 @@
     <a href="{{ post.paperurl }}">Paper</a>
     {% if post.confurl %} | <a href="{{ post.confurl }}">Conference</a>{% endif %}
   </p>
-  
-<p style="margin-top: 20px;">
-  You can also find my articles on 
-  <a href="{{ site.author.googlescholar }}">Google Scholar profile</a>.
-</p>
+
 </div>
 
 <hr>
 
 {% endfor %}
+
+<p style="margin-top: 20px;">
+  You can also find my articles on 
+  <a href="{{ site.author.googlescholar }}">Google Scholar profile</a>.
+</p>

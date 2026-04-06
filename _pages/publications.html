@@ -3,47 +3,59 @@ layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
-
+---
 
 ## Conference Papers
 
 {% for post in site.publications reversed %}
 
-<div style="margin-bottom: 40px;">
+<div style="margin-bottom: 35px;">
 
   <!-- Title -->
-  <h3 style="margin-bottom: 5px;">
+  <h3 style="margin-bottom: 4px;">
     <a href="{{ post.paperurl }}">{{ post.title }}</a>
   </h3>
 
   <!-- Venue -->
-  <p style="margin: 5px 0;">
+  <p style="margin: 2px 0;">
     Published in <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
   </p>
 
   <!-- Authors -->
   {% assign authors = post.content | split: 'Authors:' | last | split: 'Abstract:' | first %}
-  <p style="margin: 5px 0;">
+  <p style="margin: 2px 0;">
     <strong>Authors:</strong> {{ authors | strip }}
   </p>
 
-  <!-- Abstract -->
-  {% assign abstract = post.content | split: 'Abstract:' | last | split: '---' | first %}
-  <p style="margin-top: 10px; text-align: justify;">
-    {{ abstract | strip }}
-  </p>
+  <!-- Image + Abstract -->
+  <div style="display: flex; gap: 20px; align-items: flex-start; margin-top: 8px;">
+
+    <!-- Image -->
+    {% if post.image %}
+      <img src="{{ post.image }}" style="width: 260px; border-radius: 8px;">
+    {% endif %}
+
+    <!-- Abstract -->
+    <div style="flex: 1; text-align: justify;">
+      {% assign abstract = post.content | split: 'Abstract:' | last | split: '---' | first %}
+      {{ abstract | strip }}
+    </div>
+
+  </div>
 
   <!-- Links -->
-  <p style="margin-top: 10px;">
-    <a href="{{ post.paperurl }}">[Paper]</a>
+  <p style="margin-top: 8px;">
+    <a href="{{ post.paperurl }}">Paper</a>
+    {% if post.confurl %} | <a href="{{ post.confurl }}">Conference</a>{% endif %}
   </p>
 
 </div>
 
----
-
-You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
-
----
+<hr>
 
 {% endfor %}
+
+<p style="margin-top: 20px;">
+  You can also find my articles on 
+  <a href="{{ site.author.googlescholar }}">Google Scholar profile</a>.
+</p>

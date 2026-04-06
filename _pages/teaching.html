@@ -1,12 +1,114 @@
 ---
-layout: archive
+layout: single
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<style>
+.teach-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+.teach-header {
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teach-header:hover {
+  background: #f1f1f1;
+}
+
+.teach-body {
+  display: none;
+  padding: 15px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.teach-meta {
+  font-style: italic;
+  margin-bottom: 8px;
+}
+</style>
+
+<script>
+function toggleTeach(id) {
+  var x = document.getElementById(id);
+  x.style.display = (x.style.display === "block") ? "none" : "block";
+}
+</script>
+
+<!-- ================= TEACHING ITEMS ================= -->
+
+<div class="teach-card">
+  <div class="teach-header" onclick="toggleTeach('t1')">
+    Instructor Teaching Assistant — Computer Literacy
+    <span>Spring 2024</span>
+  </div>
+  <div id="t1" class="teach-body">
+    <div class="teach-meta">Asian University for Women</div>
+    <ul>
+      <li><strong>Class Size:</strong> 35 students</li>
+      <li><strong>Task:</strong> Delivered lectures and hands-on lab sessions (MS Word, Excel, PowerPoint)</li>
+      <li><strong>Focus:</strong> Digital literacy and practical applications</li>
+      <li><strong>Supervisor:</strong> Ms. Khadija Kubra</li>
+    </ul>
+  </div>
+</div>
+
+<div class="teach-card">
+  <div class="teach-header" onclick="toggleTeach('t2')">
+    Teaching Assistant — Calculus I
+    <span>Summer 2023 | Fall 2023 | Spring 2024</span>
+  </div>
+  <div id="t2" class="teach-body">
+    <div class="teach-meta">Asian University for Women</div>
+    <ul>
+      <li><strong>Class Size:</strong> 2 sections, 30 students each</li>
+      <li><strong>Task:</strong> Mentoring on limits, differentiation, integration</li>
+      <li><strong>Focus:</strong> Problem-solving and optimization techniques</li>
+      <li><strong>Supervisor:</strong> Md. Farhad Uddin</li>
+    </ul>
+  </div>
+</div>
+
+<div class="teach-card">
+  <div class="teach-header" onclick="toggleTeach('t3')">
+    Teaching Assistant — Introduction to Computer Science (CS50)
+    <span>Spring 2023 | Fall 2023</span>
+  </div>
+  <div id="t3" class="teach-body">
+    <div class="teach-meta">Asian University for Women</div>
+    <ul>
+      <li><strong>Class Size:</strong> 40+ students</li>
+      <li><strong>Task:</strong> Weekly labs (C, Python, SQL, Web Dev)</li>
+      <li><strong>Focus:</strong> Hands-on programming</li>
+      <li><strong>Supervisor:</strong> Dr. Lutfun Nahar</li>
+    </ul>
+  </div>
+</div>
+
+<div class="teach-card">
+  <div class="teach-header" onclick="toggleTeach('t4')">
+    Teaching Assistant — Precalculus
+    <span>Spring 2023 | Fall 2023</span>
+  </div>
+  <div id="t4" class="teach-body">
+    <div class="teach-meta">AUW Pre-UG Math Learning Center</div>
+    <ul>
+      <li><strong>Class Size:</strong> 5–10 students</li>
+      <li><strong>Task:</strong> Individual & group sessions</li>
+      <li><strong>Focus:</strong> Math fundamentals</li>
+      <li><strong>Supervisor:</strong> Md. Noman Uddin</li>
+    </ul>
+  </div>
+</div>

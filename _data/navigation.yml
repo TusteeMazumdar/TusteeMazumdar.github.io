@@ -16,14 +16,11 @@ main:
 
   - title: "Teaching"
     url: /teaching/    
-    
-  - title: "Experience"
-    url: /experience/
-        
+         
   - title: "Education"
     url: /education/
     
-  - title: "Extra-curricular Activities"
+  - title: "Leadership and Extra-curricular activities."
     url: /extracurricular/
     
   # - title: "CV"

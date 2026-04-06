@@ -1,15 +1,6 @@
----
-layout: single
-title: "Publications"
-permalink: /publications/
-author_profile: true
----
-
-## Conference Papers
-
 {% for post in site.publications reversed %}
 
-<div style="margin-bottom: 35px;">
+<div style="margin-bottom: 30px;">
 
   <!-- Title -->
   <h3 style="margin-bottom: 4px;">
@@ -23,30 +14,29 @@ author_profile: true
 
   <!-- Authors -->
   {% assign authors = post.content | split: 'Authors:' | last | split: 'Abstract:' | first %}
+  {% assign authors_clean = authors | strip | replace: "Tustee Mazumdar", "<strong>Tustee Mazumdar</strong>" %}
   <p style="margin: 2px 0;">
-    <strong>Authors:</strong> {{ authors | strip }}
+    <strong>Authors:</strong> {{ authors_clean }}
   </p>
 
   <!-- Image + Abstract -->
   <div style="display: flex; gap: 25px; align-items: flex-start; margin-top: 8px;">
 
-   <!-- Image -->
-  {% if post.image %}
-    <img src="{{ post.image }}" style="width: 340px; max-width: 40%; border-radius: 8px;">
-  {% endif %}
+    <!-- Image -->
+    {% if post.image %}
+      <img src="{{ post.image }}" style="width: 320px; border-radius: 6px;">
+    {% endif %}
 
-  <!-- Abstract -->
-  <div style="flex: 1; text-align: justify; font-size: 16px; line-height: 1.7;">
-    {% assign abstract = post.content | split: 'Abstract:' | last | split: '---' | first %}
-    {{ abstract | strip }}
-  </div>
-
-</div>
+    <!-- Abstract -->
+    <div style="flex: 1; text-align: justify; line-height: 1.6; font-size: 15.5px;">
+      {% assign abstract = post.content | split: 'Abstract:' | last | split: '---' | first %}
+      {{ abstract | strip }}
+    </div>
 
   </div>
 
   <!-- Links -->
-  <p style="margin-top: 8px;">
+  <p style="margin-top: 6px;">
     <a href="{{ post.paperurl }}">Paper</a>
     {% if post.confurl %} | <a href="{{ post.confurl }}">Conference</a>{% endif %}
   </p>
@@ -56,8 +46,3 @@ author_profile: true
 <hr>
 
 {% endfor %}
-
-<p style="margin-top: 20px;">
-  You can also find my articles on 
-  <a href="{{ site.author.googlescholar }}">Google Scholar profile</a>.
-</p>

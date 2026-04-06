@@ -15,9 +15,13 @@ author_profile: true
   </h3>
 
   <!-- Venue -->
-  <p style="margin: 2px 0;">
-    Published in <em>{{ post.venue }}</em>, {{ post.date | date: "%Y" }}
-  </p>
+ <p style="margin: 2px 0;">
+  Published in 
+  <em>
+    <a href="{{ post.confurl }}">{{ post.venue }}</a>
+  </em>, 
+  {{ post.date | date: "%Y" }}
+</p>
 
   <!-- Authors -->
   {% assign authors = post.content | split: 'Authors:' | last | split: 'Abstract:' | first %}
@@ -42,11 +46,7 @@ author_profile: true
 
   </div>
 
-  <!-- Links -->
-  <p style="margin-top: 6px;">
-    <a href="{{ post.paperurl }}">Paper</a>
-    {% if post.confurl %} | <a href="{{ post.confurl }}">Conference</a>{% endif %}
-  </p>
+
 
 </div>
 

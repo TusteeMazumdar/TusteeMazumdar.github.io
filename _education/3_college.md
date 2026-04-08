@@ -6,6 +6,5 @@ date: "2019 – 2021"
 details: "GPA: 5.00/5.00"
 awards:
   - "Board Scholarship"
-logo: "/images/college.png"
 order: 3
 ---

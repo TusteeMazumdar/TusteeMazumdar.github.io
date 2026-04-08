@@ -4,7 +4,5 @@ location: "Chattogram, Bangladesh"
 degree: "Higher Secondary Certificate (HSC)"
 date: "2019 – 2021"
 details: "GPA: 5.00/5.00"
-awards:
-  - "Board Scholarship"
 order: 3
 ---

@@ -42,6 +42,11 @@ publication_category:
   conferences:
     title: "Conference Papers"
 
+# Collections (must be top-level)
+collections:
+  education:
+    output: true
+
 # Site Settings
 teaser: ""
 breadcrumbs: false

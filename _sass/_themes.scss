@@ -160,5 +160,40 @@ $xing-color                 : #006567;
 .page__content {
   letter-spacing: 0.2px;
 }
+.edu-container {
+  margin-top: 15px;
+}
 
+.edu-item {
+  margin-bottom: 28px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.edu-date {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.edu-degree {
+  font-style: italic;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.edu-item ul {
+  margin: 6px 0 0 18px;
+}
+
+.edu-item li {
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
 

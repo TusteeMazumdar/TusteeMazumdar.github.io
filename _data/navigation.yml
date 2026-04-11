@@ -20,8 +20,8 @@ main:
   - title: "Education"
     url: /education/
     
-  - title: "Leadership and Extra-curricular activities."
-    url: /extracurricular/
+- title: "Leadership and Extra-curricular activities"
+  url: /extracurricular/
     
   # - title: "CV"
   #   url: /cv-json/

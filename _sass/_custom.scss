@@ -1,28 +1,33 @@
-.awards-modern {
-  margin-top: 10px;
-  border-top: 1px solid #ccc;
-  padding-top: 10px;
+.awards-list {
+  margin-top: 15px;
 }
 
-.award-item {
+.award-row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  gap: 20px;
 }
 
 .award-left {
-  max-width: 80%;
-  font-size: 15.5px;
+  display: flex;
+  gap: 10px;
+  max-width: 70%;
 }
 
-.award-org {
-  color: #555;
-  font-size: 14px;
-}
-
-.award-year {
+.award-title {
   font-weight: 600;
-  color: #333;
-  font-size: 14px;
+  line-height: 1.4;
+}
+
+.award-right {
+  font-size: 13px;
+  color: #666;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.award-icon {
+  margin-top: 2px;
 }

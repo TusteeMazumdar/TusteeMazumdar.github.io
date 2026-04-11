@@ -1,4 +1,5 @@
 ---
+title: "Dr. Khastagir Government Girls' High School"
 institution: "Dr. Khastagir Government Girls’ High School"
 location: "Chattogram, Bangladesh"
 degree: "Secondary School Certificate (SSC)"

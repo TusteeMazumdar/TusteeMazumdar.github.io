@@ -1,4 +1,5 @@
 ---
+title: "Asian University for Women"
 institution: "Asian University for Women (AUW)"
 location: "Chattogram, Bangladesh"
 degree: "Bachelor of Science in Computer Science"

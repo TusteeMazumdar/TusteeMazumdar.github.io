@@ -101,14 +101,24 @@ author_profile: true
 
 <h2 class="section-title">Honors & Awards</h2>
 
+<div class="awards-list">
+
 {% for award in site.data.awards %}
 
-  <div class="award-item">
-    <div class="award-title">🏆 {{ award.title }}</div>
-    <div class="award-meta">
+  <div class="award-row">
+    
+    <div class="award-left">
+      <span class="award-icon">🏆</span>
+      <span class="award-title">{{ award.title }}</span>
+    </div>
+
+    <div class="award-right">
       {{ award.organization }}
       {% if award.year %} ({{ award.year }}){% endif %}
     </div>
+
   </div>
 
 {% endfor %}
+
+</div>

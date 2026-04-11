@@ -7,46 +7,49 @@ author_profile: true
 
 <h1>Education</h1>
 
-{% assign sorted_edu = site.education | sort: "order" %}
+{% if site.education and site.education.size > 0 %}
+  {% assign sorted_edu = site.education | sort: "order" %}
 
-<div class="edu-container">
+  <div class="edu-container">
 
-{% for edu in sorted_edu %}
+  {% for edu in sorted_edu %}
+    <div class="edu-item">
 
-  <div class="edu-item">
-
-    <div class="edu-header">
-      <div>
-        <strong>{{ edu.institution }}</strong>
-        {% if edu.location %} – {{ edu.location }}{% endif %}
+      <div class="edu-header">
+        <div>
+          <strong>{{ edu.institution }}</strong>
+          {% if edu.location %} – {{ edu.location }}{% endif %}
+        </div>
+        <div>{{ edu.date }}</div>
       </div>
-      <div>{{ edu.date }}</div>
+
+      <div class="edu-degree">{{ edu.degree }}</div>
+
+      <ul>
+        {% if edu.gpa %}
+          <li><strong>CGPA:</strong> {{ edu.gpa }}</li>
+        {% endif %}
+
+        {% if edu.details %}
+          <li>{{ edu.details }}</li>
+        {% endif %}
+
+        {% if edu.awards %}
+          <li><strong>Awards:</strong>
+            <ul>
+              {% for award in edu.awards %}
+                <li>{{ award }}</li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endif %}
+      </ul>
+
     </div>
-
-    <div class="edu-degree">{{ edu.degree }}</div>
-
-    <ul>
-      {% if edu.gpa %}
-        <li><strong>CGPA:</strong> {{ edu.gpa }}</li>
-      {% endif %}
-
-      {% if edu.details %}
-        <li>{{ edu.details }}</li>
-      {% endif %}
-
-      {% if edu.awards %}
-        <li><strong>Awards:</strong>
-          <ul>
-            {% for award in edu.awards %}
-              <li>{{ award }}</li>
-            {% endfor %}
-          </ul>
-        </li>
-      {% endif %}
-    </ul>
+  {% endfor %}
 
   </div>
 
-{% endfor %}
-
-</div>
+{% else %}
+  <p>No education data found.</p>
+{% endif %}

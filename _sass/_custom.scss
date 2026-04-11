@@ -1,18 +1,18 @@
 /* ===============================
-   EDUCATION (ACADEMIC STYLE)
+   EDUCATION TIMELINE
 ================================= */
 
 .edu-timeline {
   position: relative;
   margin-top: 30px;
   padding-left: 28px;
-  border-left: 2px solid #e5e5e5;
+  border-left: 2px solid #e6e6e6;
 }
 
 .edu-item {
   position: relative;
-  margin-bottom: 32px;
-  padding-left: 10px;
+  margin-bottom: 35px;
+  padding-left: 12px;
 }
 
 .edu-item::before {
@@ -26,7 +26,6 @@
   border-radius: 50%;
 }
 
-/* Institution */
 .edu-title {
   font-size: 18px;
   font-weight: 700;
@@ -34,28 +33,25 @@
   margin-bottom: 4px;
 }
 
-/* Degree */
 .edu-degree {
   font-size: 15px;
   font-weight: 500;
   color: #333;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
-/* Duration */
 .edu-meta {
   font-size: 14px;
   color: #777;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
-/* GPA line */
 .edu-gpa {
   font-size: 14px;
   color: #444;
 }
 
-/* ONLY numeric part bold */
+/* ONLY NUMBER BOLD */
 .gpa-value {
   font-weight: 700;
   color: #000;
@@ -63,7 +59,7 @@
 
 
 /* ===============================
-   AWARDS (FORMAL LAYOUT)
+   AWARDS — FIXED (NO BREAKING)
 ================================= */
 
 .section-title {
@@ -75,45 +71,45 @@
 }
 
 .awards-clean {
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
-/* Each row */
 .award-clean {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 20px;
   margin-bottom: 14px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #f2f2f2;
-  gap: 20px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-/* Left */
-.award-left {
-  max-width: 70%;
-}
-
+/* LEFT */
 .award-title {
   font-weight: 600;
-  line-height: 1.4;
   color: #222;
+  line-height: 1.5;
+  flex: 1;
+  word-break: break-word;   /* FIXES LONG TEXT BREAKING */
 }
 
-/* Right */
+/* RIGHT */
 .award-right {
   font-size: 13px;
   color: #777;
   text-align: right;
   white-space: nowrap;
+  flex-shrink: 0;
+  min-width: 220px;   /* PREVENTS COLLAPSE */
 }
 
 
 /* ===============================
-   RESPONSIVE
+   RESPONSIVE FIX
 ================================= */
 
 @media (max-width: 768px) {
+
   .award-clean {
     flex-direction: column;
     align-items: flex-start;
@@ -122,5 +118,7 @@
   .award-right {
     text-align: left;
     white-space: normal;
+    min-width: auto;
   }
+
 }

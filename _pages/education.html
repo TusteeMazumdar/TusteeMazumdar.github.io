@@ -1,68 +1,9 @@
 ---
-  padding-left: 30px;
-  border-left: 2px solid #e0e0e0;
-}
-
-.edu-item {
-  position: relative;
-  margin-bottom: 35px;
-  padding-left: 10px;
-}
-
-.edu-item::before {
-  content: "";
-  position: absolute;
-  left: -36px;
-  top: 6px;
-  width: 12px;
-  height: 12px;
-  background: #2a7ae2;
-  border-radius: 50%;
-}
-
-.edu-title {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.edu-meta {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 5px;
-}
-
-.edu-degree {
-  font-weight: 500;
-  margin-bottom: 6px;
-}
-
-.edu-gpa {
-  font-size: 14px;
-  color: #444;
-}
-
-.section-title {
-  margin-top: 40px;
-  font-size: 22px;
-  font-weight: 700;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
-}
-
-.award-item {
-  margin-bottom: 12px;
-}
-
-.award-title {
-  font-weight: 600;
-}
-
-.award-meta {
-  font-size: 13px;
-  color: #666;
-}
-</style>
-
+layout: single
+title: "Education"
+permalink: /education/
+author_profile: true
+---
 
 <div class="edu-timeline">
 
@@ -75,3 +16,46 @@
     <div class="edu-degree">
       {{ edu.degree }}{% if edu.field %} — {{ edu.field }}{% endif %}
     </div>
+
+    <div class="edu-meta">{{ edu.duration }}</div>
+
+    {% if edu.gpa %}
+      <div class="edu-gpa">
+        {% if edu.institution == "Asian University for Women" %}
+          CGPA: <span class="gpa-value">{{ edu.gpa }}</span>
+        {% else %}
+          GPA: <span class="gpa-value">{{ edu.gpa }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+  </div>
+
+{% endfor %}
+
+</div>
+
+
+<h2 class="section-title">Honors & Awards</h2>
+
+<div class="awards-clean">
+
+{% for award in site.data.awards %}
+
+  <div class="award-clean">
+    
+    <div class="award-left">
+      <span class="award-icon">🏆</span>
+      <div class="award-title">{{ award.title }}</div>
+    </div>
+
+    <div class="award-right">
+      {{ award.organization }}
+      {% if award.year %} — {{ award.year }}{% endif %}
+    </div>
+
+  </div>
+
+{% endfor %}
+
+</div>

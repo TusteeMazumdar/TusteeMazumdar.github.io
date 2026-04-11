@@ -1,24 +1,34 @@
-<h2>Honors and Awards</h2>
+---
+layout: single
+title: "Education"
+permalink: /education/
+author_profile: true
+---
 
-<div class="awards-modern">
+<h1>Education</h1>
 
-{% for award in site.data.awards %}
+{% for edu in site.data.education %}
 
-  <div class="award-item">
+  <div style="margin-bottom: 25px;">
+    <strong>{{ edu.institution }}</strong><br>
+    {{ edu.degree }} — {{ edu.field }}<br>
+    {{ edu.duration }}<br>
 
-    <div class="award-left">
-      <strong>{{ award.title }}</strong><br>
-      <span class="award-org">{{ award.organization }}</span>
-    </div>
-
-    {% if award.year %}
-    <div class="award-year">
-      {{ award.year }}
-    </div>
+    {% if edu.gpa %}
+      CGPA: {{ edu.gpa }}
     {% endif %}
-
   </div>
 
 {% endfor %}
 
-</div>
+<h2>Honors & Awards</h2>
+
+{% for award in site.data.awards %}
+
+  <div style="margin-bottom: 12px;">
+    <strong>{{ award.title }}</strong><br>
+    {{ award.organization }}
+    {% if award.year %} ({{ award.year }}){% endif %}
+  </div>
+
+{% endfor %}

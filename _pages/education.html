@@ -15,30 +15,33 @@ author_profile: true
 
   <div class="edu-item">
 
-    <!-- Header -->
     <div class="edu-header">
       <div>
         <strong>{{ edu.institution }}</strong>
         {% if edu.location %} – {{ edu.location }}{% endif %}
       </div>
-      <div class="edu-date">{{ edu.date }}</div>
+      <div>{{ edu.date }}</div>
     </div>
 
-    <!-- Degree -->
     <div class="edu-degree">{{ edu.degree }}</div>
 
-    <!-- Details -->
     <ul>
       {% if edu.gpa %}
         <li><strong>CGPA:</strong> {{ edu.gpa }}</li>
       {% endif %}
 
-      {% if edu.courses %}
-        <li><strong>Selected Courses:</strong> {{ edu.courses }}</li>
-      {% endif %}
-
       {% if edu.details %}
         <li>{{ edu.details }}</li>
+      {% endif %}
+
+      {% if edu.awards %}
+        <li><strong>Awards:</strong>
+          <ul>
+            {% for award in edu.awards %}
+              <li>{{ award }}</li>
+            {% endfor %}
+          </ul>
+        </li>
       {% endif %}
     </ul>
 

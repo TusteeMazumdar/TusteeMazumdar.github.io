@@ -66,122 +66,37 @@
    AWARDS SECTION (CLEAN + FORMAL)
 ================================= */
 
-.section-title {
-  margin-top: 45px;
-  font-size: 22px;
-  font-weight: 700;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 6px;
-}
+/* ===============================
+   AWARDS — CLEAN PROFESSIONAL FIX
+================================= */
 
 .awards-clean {
   margin-top: 20px;
 }
 
-/* Each row */
 .award-clean {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 16px;
-  padding-bottom: 12px;
+  align-items: baseline;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #f0f0f0;
   gap: 20px;
 }
 
-/* Left side */
-.award-left {
-  display: flex;
-  gap: 10px;
-  max-width: 70%;
-}
-
+/* LEFT SIDE (TITLE) */
 .award-title {
   font-weight: 600;
-  line-height: 1.4;
   color: #222;
+  line-height: 1.4;
+  flex: 1;
 }
 
-/* Right side (organization + year) */
+/* RIGHT SIDE (ORG + YEAR) */
 .award-right {
   font-size: 13px;
   color: #777;
   text-align: right;
   white-space: nowrap;
-}
-
-/* Icon */
-.award-icon {
-  margin-top: 2px;
-}
-
-
-/* ===============================
-   RESPONSIVE FIX
-================================= */
-
-@media (max-width: 768px) {
-  .award-clean {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .award-right {
-    text-align: left;
-    white-space: normal;
-  }
-}
-/* ===============================
-   DYNAMIC EXPERIENCE TIMELINE
-================================= */
-
-.exp-timeline {
-  position: relative;
-  margin-top: 30px;
-  padding-left: 30px;
-  border-left: 2px solid #e5e5e5;
-}
-
-.exp-year {
-  font-size: 20px;
-  font-weight: 700;
-  color: #2a7ae2;
-  margin: 25px 0 10px;
-}
-
-.exp-item {
-  position: relative;
-  margin-bottom: 28px;
-  padding-left: 10px;
-}
-
-.exp-item::before {
-  content: "";
-  position: absolute;
-  left: -36px;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  background: #2a7ae2;
-  border-radius: 50%;
-}
-
-.exp-header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.exp-title {
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.exp-date {
-  font-size: 13px;
-  color: #777;
-}
-
-.exp-desc {
-  margin-top: 5px;
-  color: #555;
+  flex-shrink: 0;
 }

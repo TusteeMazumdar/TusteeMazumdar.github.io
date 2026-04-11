@@ -1,0 +1,34 @@
+---
+layout: single
+title: "Leadership & Extra-curricular Activities"
+permalink: /extracurricular/
+author_profile: true
+---
+
+<div class="exp-timeline">
+
+{% for item in site.data.experience %}
+
+  <div class="exp-item">
+
+    <div class="exp-header">
+      <div class="exp-title">
+        {{ item.role }} — {{ item.organization }}
+      </div>
+
+      <div class="exp-date">
+        {{ item.duration }}
+      </div>
+    </div>
+
+    {% if item.description %}
+      <div class="exp-desc">
+        {{ item.description }}
+      </div>
+    {% endif %}
+
+  </div>
+
+{% endfor %}
+
+</div>

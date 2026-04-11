@@ -5,9 +5,18 @@ permalink: /extracurricular/
 author_profile: true
 ---
 
+{% assign sorted = site.data.experience | sort: "start" | reverse %}
+
 <div class="exp-timeline">
 
-{% for item in site.data.experience %}
+{% assign current_year = "" %}
+
+{% for item in sorted %}
+
+  {% if item.start != current_year %}
+    <div class="exp-year">{{ item.start }}</div>
+    {% assign current_year = item.start %}
+  {% endif %}
 
   <div class="exp-item">
 
@@ -17,15 +26,13 @@ author_profile: true
       </div>
 
       <div class="exp-date">
-        {{ item.duration }}
+        {{ item.start }}–{{ item.end }}
       </div>
     </div>
 
-    {% if item.description %}
-      <div class="exp-desc">
-        {{ item.description }}
-      </div>
-    {% endif %}
+    <div class="exp-desc">
+      {{ item.description }}
+    </div>
 
   </div>
 

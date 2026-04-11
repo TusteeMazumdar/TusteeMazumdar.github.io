@@ -1,63 +1,44 @@
 /* =========================
-   GLOBAL IMPROVEMENTS
+   GLOBAL TYPOGRAPHY (ACADEMIC STYLE)
 ========================= */
 
 .page__content {
-  line-height: 1.65;
   font-size: 16px;
+  line-height: 1.7;
+  color: #222;
 }
 
 .page__content h1 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .page__content h2 {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 40px;
   margin-bottom: 10px;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 /* =========================
-   EDUCATION TIMELINE
+   EDUCATION (CLEAN LIST)
 ========================= */
 
-.edu-timeline {
-  position: relative;
-  margin-top: 25px;
-  padding-left: 30px;
-  border-left: 2px solid #e0e0e0;
-}
-
 .edu-item {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.edu-item::before {
-  content: "";
-  position: absolute;
-  left: -36px;
-  top: 6px;
-  width: 12px;
-  height: 12px;
-  background: #2a7ae2;
-  border-radius: 50%;
+  margin-bottom: 22px;
 }
 
 .edu-title {
+  font-weight: 600;
   font-size: 17px;
-  font-weight: 700;
 }
 
 .edu-degree {
   font-size: 15px;
-  font-weight: 500;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .edu-meta {
@@ -68,87 +49,69 @@
 
 .edu-gpa {
   font-size: 14px;
-  color: #444;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 /* =========================
-   AWARDS (PROFESSIONAL LAYOUT)
+   AWARDS (MINIMAL PROFESSIONAL)
 ========================= */
 
-.awards {
-  margin-top: 20px;
+.awards-clean {
+  margin-top: 15px;
 }
 
-.award {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 10px 0;
-  border-bottom: 1px solid #f0f0f0;
-  gap: 20px;
-}
-
-.award:last-child {
-  border-bottom: none;
-}
-
-.award-main {
-  display: flex;
-  gap: 10px;
-  max-width: 70%;
+.award-clean {
+  margin-bottom: 16px;
 }
 
 .award-title {
   font-weight: 600;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .award-meta {
   font-size: 14px;
   color: #666;
-  text-align: right;
-  white-space: nowrap;
-}
-
-/* subtle icon style (clean, not flashy) */
-.award-icon {
-  font-size: 15px;
   margin-top: 2px;
-  color: #2a7ae2;
 }
 
 /* =========================
-   HOVER POLISH (SUBTLE)
+   OPTIONAL SUBTLE ENHANCEMENT
 ========================= */
 
-.edu-item:hover {
-  transform: translateX(2px);
-  transition: 0.2s ease;
-}
-
-.award:hover {
-  background: #fafafa;
-  transition: 0.2s ease;
-  padding-left: 4px;
+/* slight visual structure without noise */
+.award-clean {
+  border-left: 2px solid #eaeaea;
+  padding-left: 10px;
 }
 
 /* =========================
-   RESPONSIVE (MOBILE FIX)
+   SPACING FIXES
+========================= */
+
+.archive {
+  max-width: 720px;
+}
+
+.page__content p {
+  margin-bottom: 12px;
+}
+
+/* =========================
+   MOBILE FRIENDLY
 ========================= */
 
 @media (max-width: 768px) {
-  .award {
-    flex-direction: column;
-    align-items: flex-start;
+  .page__content {
+    font-size: 15px;
   }
 
-  .award-meta {
-    text-align: left;
-    white-space: normal;
+  .page__content h1 {
+    font-size: 26px;
   }
 
-  .award-main {
-    max-width: 100%;
+  .page__content h2 {
+    font-size: 20px;
   }
 }

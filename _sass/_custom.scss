@@ -1,124 +1,117 @@
-/* ===============================
-   EDUCATION TIMELINE
-================================= */
+/* =========================
+   GLOBAL TYPOGRAPHY (ACADEMIC STYLE)
+========================= */
 
-.edu-timeline {
-  position: relative;
-  margin-top: 30px;
-  padding-left: 28px;
-  border-left: 2px solid #e6e6e6;
+.page__content {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
 }
+
+.page__content h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.page__content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 4px;
+}
+
+/* =========================
+   EDUCATION (CLEAN LIST)
+========================= */
 
 .edu-item {
-  position: relative;
-  margin-bottom: 35px;
-  padding-left: 12px;
-}
-
-.edu-item::before {
-  content: "";
-  position: absolute;
-  left: -34px;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  background: #2a7ae2;
-  border-radius: 50%;
+  margin-bottom: 22px;
 }
 
 .edu-title {
-  font-size: 18px;
-  font-weight: 700;
-  color: #2a7ae2;
-  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .edu-degree {
   font-size: 15px;
-  font-weight: 500;
-  color: #333;
-  margin-bottom: 4px;
+  margin-top: 2px;
 }
 
 .edu-meta {
   font-size: 14px;
-  color: #777;
-  margin-bottom: 4px;
+  color: #666;
+  margin-top: 2px;
 }
 
 .edu-gpa {
   font-size: 14px;
-  color: #444;
+  margin-top: 3px;
 }
 
-/* ONLY NUMBER BOLD */
-.gpa-value {
-  font-weight: 700;
-  color: #000;
-}
-
-
-/* ===============================
-   AWARDS — FIXED (NO BREAKING)
-================================= */
-
-.section-title {
-  margin-top: 45px;
-  font-size: 22px;
-  font-weight: 700;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 6px;
-}
+/* =========================
+   AWARDS (MINIMAL PROFESSIONAL)
+========================= */
 
 .awards-clean {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .award-clean {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 16px;
 }
 
-/* LEFT */
 .award-title {
   font-weight: 600;
-  color: #222;
-  line-height: 1.5;
-  flex: 1;
-  word-break: break-word;   /* FIXES LONG TEXT BREAKING */
+  font-size: 16px;
+  line-height: 1.4;
 }
 
-/* RIGHT */
-.award-right {
-  font-size: 13px;
-  color: #777;
-  text-align: right;
-  white-space: nowrap;
-  flex-shrink: 0;
-  min-width: 220px;   /* PREVENTS COLLAPSE */
+.award-meta {
+  font-size: 14px;
+  color: #666;
+  margin-top: 2px;
 }
 
+/* =========================
+   OPTIONAL SUBTLE ENHANCEMENT
+========================= */
 
-/* ===============================
-   RESPONSIVE FIX
-================================= */
+/* slight visual structure without noise */
+.award-clean {
+  border-left: 2px solid #eaeaea;
+  padding-left: 10px;
+}
+
+/* =========================
+   SPACING FIXES
+========================= */
+
+.archive {
+  max-width: 720px;
+}
+
+.page__content p {
+  margin-bottom: 12px;
+}
+
+/* =========================
+   MOBILE FRIENDLY
+========================= */
 
 @media (max-width: 768px) {
-
-  .award-clean {
-    flex-direction: column;
-    align-items: flex-start;
+  .page__content {
+    font-size: 15px;
   }
 
-  .award-right {
-    text-align: left;
-    white-space: normal;
-    min-width: auto;
+  .page__content h1 {
+    font-size: 26px;
   }
 
+  .page__content h2 {
+    font-size: 20px;
+  }
 }

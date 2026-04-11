@@ -1,4 +1,5 @@
 ---
+title: "Govt. Hazi Mohammad Mohsin College"
 institution: "Govt. Hazi Mohammad Mohsin College"
 location: "Chattogram, Bangladesh"
 degree: "Higher Secondary Certificate (HSC)"

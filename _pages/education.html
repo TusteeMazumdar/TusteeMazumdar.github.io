@@ -5,30 +5,110 @@ permalink: /education/
 author_profile: true
 ---
 
+<style>
+.edu-timeline {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 30px;
+  border-left: 2px solid #e0e0e0;
+}
+
+.edu-item {
+  position: relative;
+  margin-bottom: 35px;
+  padding-left: 10px;
+}
+
+.edu-item::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: #2a7ae2;
+  border-radius: 50%;
+}
+
+.edu-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.edu-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.edu-degree {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.edu-gpa {
+  font-size: 14px;
+  color: #444;
+}
+
+.section-title {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 700;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.award-item {
+  margin-bottom: 12px;
+}
+
+.award-title {
+  font-weight: 600;
+}
+
+.award-meta {
+  font-size: 13px;
+  color: #666;
+}
+</style>
+
 <h1>Education</h1>
+
+<div class="edu-timeline">
 
 {% for edu in site.data.education %}
 
-  <div style="margin-bottom: 25px;">
-    <strong>{{ edu.institution }}</strong><br>
-    {{ edu.degree }} — {{ edu.field }}<br>
-    {{ edu.duration }}<br>
+  <div class="edu-item">
+    
+    <div class="edu-title">{{ edu.institution }}</div>
+
+    <div class="edu-degree">
+      {{ edu.degree }}{% if edu.field %} — {{ edu.field }}{% endif %}
+    </div>
+
+    <div class="edu-meta">{{ edu.duration }}</div>
 
     {% if edu.gpa %}
-      CGPA: {{ edu.gpa }}
+      <div class="edu-gpa">CGPA: {{ edu.gpa }}</div>
     {% endif %}
+
   </div>
 
 {% endfor %}
 
-<h2>Honors & Awards</h2>
+</div>
+
+<h2 class="section-title">Honors & Awards</h2>
 
 {% for award in site.data.awards %}
 
-  <div style="margin-bottom: 12px;">
-    <strong>{{ award.title }}</strong><br>
-    {{ award.organization }}
-    {% if award.year %} ({{ award.year }}){% endif %}
+  <div class="award-item">
+    <div class="award-title">🏆 {{ award.title }}</div>
+    <div class="award-meta">
+      {{ award.organization }}
+      {% if award.year %} ({{ award.year }}){% endif %}
+    </div>
   </div>
 
 {% endfor %}

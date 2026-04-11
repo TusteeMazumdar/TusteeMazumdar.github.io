@@ -131,3 +131,57 @@
     white-space: normal;
   }
 }
+/* ===============================
+   DYNAMIC EXPERIENCE TIMELINE
+================================= */
+
+.exp-timeline {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 30px;
+  border-left: 2px solid #e5e5e5;
+}
+
+.exp-year {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a7ae2;
+  margin: 25px 0 10px;
+}
+
+.exp-item {
+  position: relative;
+  margin-bottom: 28px;
+  padding-left: 10px;
+}
+
+.exp-item::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: #2a7ae2;
+  border-radius: 50%;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.exp-date {
+  font-size: 13px;
+  color: #777;
+}
+
+.exp-desc {
+  margin-top: 5px;
+  color: #555;
+}

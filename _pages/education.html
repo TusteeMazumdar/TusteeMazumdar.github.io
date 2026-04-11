@@ -5,12 +5,14 @@ permalink: /education/
 author_profile: true
 ---
 
+<h1>Education</h1>
+
 <div class="edu-timeline">
 
 {% for edu in site.data.education %}
 
   <div class="edu-item">
-    
+
     <div class="edu-title">{{ edu.institution }}</div>
 
     <div class="edu-degree">
@@ -20,13 +22,13 @@ author_profile: true
     <div class="edu-meta">{{ edu.duration }}</div>
 
     {% if edu.gpa %}
-      <div class="edu-gpa">
-        {% if edu.institution == "Asian University for Women" %}
-          CGPA: <span class="gpa-value">{{ edu.gpa }}</span>
-        {% else %}
-          GPA: <span class="gpa-value">{{ edu.gpa }}</span>
-        {% endif %}
-      </div>
+    <div class="edu-gpa">
+      {% if edu.institution == "Asian University for Women" %}
+        <strong>CGPA:</strong> <span class="gpa-value">{{ edu.gpa }}</span>
+      {% else %}
+        <strong>GPA:</strong> <span class="gpa-value">{{ edu.gpa }}</span>
+      {% endif %}
+    </div>
     {% endif %}
 
   </div>
@@ -41,20 +43,17 @@ author_profile: true
 <div class="awards-clean">
 
 {% for award in site.data.awards %}
-
   <div class="award-clean">
-    
-    <div class="award-left">
-      <div class="award-title">{{ award.title }}</div>
+
+    <div class="award-title">
+      {{ award.title }}
     </div>
 
     <div class="award-right">
-      {{ award.organization }}
-      {% if award.year %} — {{ award.year }}{% endif %}
+      {{ award.organization }}{% if award.year %} — {{ award.year }}{% endif %}
     </div>
 
   </div>
-
 {% endfor %}
 
 </div>

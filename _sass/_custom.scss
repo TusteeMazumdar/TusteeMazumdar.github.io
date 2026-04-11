@@ -1,5 +1,35 @@
+---
+---
+
+@import "minimal-mistakes";
+
 /* ===============================
-   EDUCATION TIMELINE (PRO LEVEL)
+   GLOBAL TYPOGRAPHY
+================================= */
+
+.page__content {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.page__content h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.page__content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 5px;
+}
+
+
+/* ===============================
+   EDUCATION TIMELINE
 ================================= */
 
 .edu-timeline {
@@ -11,7 +41,7 @@
 
 .edu-item {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   padding-left: 12px;
 }
 
@@ -26,7 +56,6 @@
   border-radius: 50%;
 }
 
-/* Title (University Name) */
 .edu-title {
   font-size: 18px;
   font-weight: 700;
@@ -34,28 +63,24 @@
   margin-bottom: 4px;
 }
 
-/* Degree line */
 .edu-degree {
   font-size: 15px;
   font-weight: 500;
   color: #333;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
-/* Duration */
 .edu-meta {
   font-size: 14px;
   color: #777;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
-/* GPA container */
 .edu-gpa {
   font-size: 14px;
   color: #444;
 }
 
-/* ONLY GPA NUMBER BOLD */
 .gpa-value {
   font-weight: 700;
   color: #000;
@@ -63,12 +88,16 @@
 
 
 /* ===============================
-   AWARDS SECTION (CLEAN + FORMAL)
+   AWARDS (CLEAN PROFESSIONAL)
 ================================= */
 
-/* ===============================
-   AWARDS — CLEAN PROFESSIONAL FIX
-================================= */
+.section-title {
+  margin-top: 45px;
+  font-size: 22px;
+  font-weight: 700;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 6px;
+}
 
 .awards-clean {
   margin-top: 20px;
@@ -77,14 +106,13 @@
 .award-clean {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 14px;
   padding-bottom: 10px;
   border-bottom: 1px solid #f0f0f0;
   gap: 20px;
 }
 
-/* LEFT SIDE (TITLE) */
 .award-title {
   font-weight: 600;
   color: #222;
@@ -92,11 +120,123 @@
   flex: 1;
 }
 
-/* RIGHT SIDE (ORG + YEAR) */
 .award-right {
   font-size: 13px;
   color: #777;
   text-align: right;
   white-space: nowrap;
   flex-shrink: 0;
+}
+
+
+/* ===============================
+   EXPERIENCE / ECA TIMELINE
+================================= */
+
+.exp-timeline {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 30px;
+  border-left: 2px solid #e5e5e5;
+}
+
+.exp-year {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a7ae2;
+  margin: 25px 0 10px;
+}
+
+.exp-item {
+  position: relative;
+  margin-bottom: 28px;
+  padding-left: 10px;
+}
+
+.exp-item::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: #2a7ae2;
+  border-radius: 50%;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.exp-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #222;
+  max-width: 75%;
+  line-height: 1.4;
+}
+
+.exp-date {
+  font-size: 13px;
+  color: #777;
+  white-space: nowrap;
+}
+
+.exp-desc {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+  line-height: 1.6;
+  max-width: 80%;
+}
+
+
+/* ===============================
+   SUBTLE INTERACTIONS
+================================= */
+
+.edu-item:hover,
+.exp-item:hover {
+  transform: translateX(2px);
+  transition: 0.2s ease;
+}
+
+.edu-item:hover .edu-title,
+.exp-item:hover .exp-title {
+  color: #2a7ae2;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-date {
+    margin-top: 2px;
+  }
+
+  .exp-desc {
+    max-width: 100%;
+  }
+
+  .award-clean {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .award-right {
+    text-align: left;
+    white-space: normal;
+  }
+
 }

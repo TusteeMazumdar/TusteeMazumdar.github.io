@@ -1,48 +1,18 @@
----
----
-
-@import "minimal-mistakes";
-
 /* ===============================
-   GLOBAL TYPOGRAPHY
-================================= */
-
-.page__content {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #222;
-}
-
-.page__content h1 {
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.page__content h2 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 5px;
-}
-
-
-/* ===============================
-   EDUCATION TIMELINE
+   EDUCATION (ACADEMIC STYLE)
 ================================= */
 
 .edu-timeline {
   position: relative;
   margin-top: 30px;
   padding-left: 28px;
-  border-left: 2px solid #e6e6e6;
+  border-left: 2px solid #e5e5e5;
 }
 
 .edu-item {
   position: relative;
   margin-bottom: 32px;
-  padding-left: 12px;
+  padding-left: 10px;
 }
 
 .edu-item::before {
@@ -56,6 +26,7 @@
   border-radius: 50%;
 }
 
+/* Institution */
 .edu-title {
   font-size: 18px;
   font-weight: 700;
@@ -63,6 +34,7 @@
   margin-bottom: 4px;
 }
 
+/* Degree */
 .edu-degree {
   font-size: 15px;
   font-weight: 500;
@@ -70,17 +42,20 @@
   margin-bottom: 3px;
 }
 
+/* Duration */
 .edu-meta {
   font-size: 14px;
   color: #777;
   margin-bottom: 3px;
 }
 
+/* GPA line */
 .edu-gpa {
   font-size: 14px;
   color: #444;
 }
 
+/* ONLY numeric part bold */
 .gpa-value {
   font-weight: 700;
   color: #000;
@@ -88,119 +63,49 @@
 
 
 /* ===============================
-   AWARDS — CLASSIC ACADEMIC STYLE
+   AWARDS (FORMAL LAYOUT)
 ================================= */
 
-.awards-classic {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 15px;
-}
-
-.awards-classic li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-/* Trophy icon */
-.award-icon {
-  margin-right: 8px;
-  font-size: 14px;
-  margin-top: 3px;
-}
-
-/* Full text */
-.award-text {
-  color: #222;
-}
-
-/* RED highlight (like his site) */
-.award-highlight {
-  color: #b22222;  /* academic red */
-  font-weight: 600;
-}
-
-
-/* ===============================
-   EXPERIENCE / ECA TIMELINE
-================================= */
-
-.exp-timeline {
-  position: relative;
-  margin-top: 30px;
-  padding-left: 30px;
-  border-left: 2px solid #e5e5e5;
-}
-
-.exp-year {
-  font-size: 20px;
+.section-title {
+  margin-top: 45px;
+  font-size: 22px;
   font-weight: 700;
-  color: #2a7ae2;
-  margin: 25px 0 10px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 6px;
 }
 
-.exp-item {
-  position: relative;
-  margin-bottom: 28px;
-  padding-left: 10px;
+.awards-clean {
+  margin-top: 18px;
 }
 
-.exp-item::before {
-  content: "";
-  position: absolute;
-  left: -36px;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  background: #2a7ae2;
-  border-radius: 50%;
-}
-
-.exp-header {
+/* Each row */
+.award-clean {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2;
   gap: 20px;
 }
 
-.exp-title {
-  font-weight: 600;
-  font-size: 16px;
-  color: #222;
-  max-width: 75%;
-  line-height: 1.4;
+/* Left */
+.award-left {
+  max-width: 70%;
 }
 
-.exp-date {
+.award-title {
+  font-weight: 600;
+  line-height: 1.4;
+  color: #222;
+}
+
+/* Right */
+.award-right {
   font-size: 13px;
   color: #777;
+  text-align: right;
   white-space: nowrap;
-}
-
-.exp-desc {
-  font-size: 14px;
-  color: #555;
-  margin-top: 5px;
-  line-height: 1.6;
-  max-width: 80%;
-}
-
-
-/* ===============================
-   SUBTLE INTERACTIONS
-================================= */
-
-.edu-item:hover,
-.exp-item:hover {
-  transform: translateX(2px);
-  transition: 0.2s ease;
-}
-
-.edu-item:hover .edu-title,
-.exp-item:hover .exp-title {
-  color: #2a7ae2;
 }
 
 
@@ -209,20 +114,6 @@
 ================================= */
 
 @media (max-width: 768px) {
-
-  .exp-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .exp-date {
-    margin-top: 2px;
-  }
-
-  .exp-desc {
-    max-width: 100%;
-  }
-
   .award-clean {
     flex-direction: column;
     align-items: flex-start;
@@ -232,5 +123,4 @@
     text-align: left;
     white-space: normal;
   }
-
 }

@@ -88,15 +88,15 @@ author_profile: true
 
     <div class="edu-meta">{{ edu.duration }}</div>
 
-    {% if edu.gpa %}
-      <div class="edu-gpa">CGPA: {{ edu.gpa }}</div>
+{% if edu.gpa %}
+  <div class="edu-gpa">
+    {% if edu.institution == "Asian University for Women" %}
+      <strong>CGPA:</strong> {{ edu.gpa }}
+    {% else %}
+      <strong>GPA:</strong> {{ edu.gpa }}
     {% endif %}
-
   </div>
-
-{% endfor %}
-
-</div>
+{% endif %}
 
 <h2>Honors & Awards</h2>
 

@@ -88,44 +88,38 @@
 
 
 /* ===============================
-   AWARDS (CLEAN PROFESSIONAL)
+   AWARDS — CLASSIC ACADEMIC STYLE
 ================================= */
 
-.section-title {
-  margin-top: 45px;
-  font-size: 22px;
-  font-weight: 700;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 6px;
+.awards-classic {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
 }
 
-.awards-clean {
-  margin-top: 20px;
-}
-
-.award-clean {
+.awards-classic li {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #f0f0f0;
-  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
-.award-title {
-  font-weight: 600;
+/* Trophy icon */
+.award-icon {
+  margin-right: 8px;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+/* Full text */
+.award-text {
   color: #222;
-  line-height: 1.4;
-  flex: 1;
 }
 
-.award-right {
-  font-size: 13px;
-  color: #777;
-  text-align: right;
-  white-space: nowrap;
-  flex-shrink: 0;
+/* RED highlight (like his site) */
+.award-highlight {
+  color: #b22222;  /* academic red */
+  font-weight: 600;
 }
 
 

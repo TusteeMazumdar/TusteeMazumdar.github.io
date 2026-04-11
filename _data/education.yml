@@ -1,0 +1,20 @@
+- institution: "Asian University for Women"
+  degree: "Bachelor of Science (B.Sc.)"
+  field: "Computer Science"
+  duration: "2021 – 2025"
+  gpa: "3.81/4.00 (Magna Cum Laude)"
+
+- institution: "University of Tokyo × AUW"
+  degree: "Exchange Programme"
+  field: "Migration, Immigration & Refugees"
+  duration: "Spring 2024"
+
+- institution: "Govt. Hazi Mohammad Mohsin College"
+  degree: "Higher Secondary Certificate (HSC)"
+  duration: "2019 – 2021"
+  gpa: "5.00/5.00"
+
+- institution: "Dr. Khastagir Government Girls’ High School"
+  degree: "Secondary School Certificate (SSC)"
+  duration: "2013 – 2019"
+  gpa: "5.00/5.00"

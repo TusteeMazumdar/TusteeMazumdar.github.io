@@ -76,3 +76,35 @@ body {
 .archive {
   max-width: 700px;
 }
+
+/* =========================================================
+   FORCE LIGHT THEME (DISABLE DARK MODE COMPLETELY)
+   ========================================================= */
+
+/* Force white background everywhere */
+html,
+body,
+.page,
+.page__content,
+.sidebar,
+.masthead,
+.archive {
+  background-color: #ffffff !important;
+  color: #222 !important;
+}
+
+/* Kill dark-mode overrides */
+html[data-theme="dark"],
+body[data-theme="dark"] {
+  background-color: #ffffff !important;
+  color: #222 !important;
+}
+
+/* Prevent OS-based dark mode */
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #ffffff !important;
+    color: #222 !important;
+  }
+}

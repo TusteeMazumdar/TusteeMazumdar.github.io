@@ -78,33 +78,25 @@ body {
 }
 
 /* =========================================================
-   FORCE LIGHT THEME (DISABLE DARK MODE COMPLETELY)
+   FORCE WHITE HEADER (MASTHEAD)
    ========================================================= */
 
-/* Force white background everywhere */
-html,
-body,
-.page,
-.page__content,
-.sidebar,
-.masthead,
-.archive {
+.masthead {
   background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+/* Site title color */
+.masthead__menu-item a {
   color: #222 !important;
 }
 
-/* Kill dark-mode overrides */
-html[data-theme="dark"],
-body[data-theme="dark"] {
-  background-color: #ffffff !important;
+/* Make nav links dark text */
+.greedy-nav a {
   color: #222 !important;
 }
 
-/* Prevent OS-based dark mode */
-@media (prefers-color-scheme: dark) {
-  html,
-  body {
-    background-color: #ffffff !important;
-    color: #222 !important;
-  }
+/* Mobile menu icon color */
+.navicon {
+  background: #222 !important;
 }

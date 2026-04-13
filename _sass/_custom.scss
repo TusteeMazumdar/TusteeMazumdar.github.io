@@ -1,6 +1,6 @@
-/* =========================
-   GLOBAL TYPOGRAPHY (ACADEMIC STYLE)
-========================= */
+/* ===============================
+   GLOBAL TYPOGRAPHY
+================================ */
 
 .page__content {
   font-size: 16px;
@@ -11,29 +11,48 @@
 .page__content h1 {
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .page__content h2 {
   font-size: 22px;
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  font-weight: 700;
+  margin-top: 45px;
+  margin-bottom: 14px;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 }
 
-/* =========================
-   EDUCATION (CLEAN LIST)
-========================= */
+/* ===============================
+   EDUCATION (TIMELINE STYLE)
+================================ */
+
+.edu-timeline {
+  border-left: 2px solid #e5e5e5;
+  padding-left: 28px;
+  margin-top: 25px;
+}
 
 .edu-item {
-  margin-bottom: 22px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.edu-item::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: #2a7ae2;
+  border-radius: 50%;
 }
 
 .edu-title {
-  font-weight: 600;
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a7ae2;
 }
 
 .edu-degree {
@@ -44,74 +63,64 @@
 .edu-meta {
   font-size: 14px;
   color: #666;
-  margin-top: 2px;
 }
 
 .edu-gpa {
-  font-size: 14px;
   margin-top: 3px;
+  font-size: 14px;
 }
 
-/* =========================
-   AWARDS (MINIMAL PROFESSIONAL)
-========================= */
+.gpa-value {
+  font-weight: 700;
+  color: #000;
+}
+
+/* ===============================
+   HONORS & AWARDS (FIXED ALIGNMENT)
+================================ */
 
 .awards-clean {
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .award-clean {
-  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .award-title {
-  font-weight: 600;
   font-size: 16px;
-  line-height: 1.4;
+  font-weight: 600;
+  color: #222;
+  flex: 1;
+  line-height: 1.5;
 }
 
-.award-meta {
+.award-right {
   font-size: 14px;
   color: #666;
-  margin-top: 2px;
+  white-space: nowrap;
+  text-align: right;
+  min-width: 220px;
 }
 
-/* =========================
-   OPTIONAL SUBTLE ENHANCEMENT
-========================= */
-
-/* slight visual structure without noise */
-.award-clean {
-  border-left: 2px solid #eaeaea;
-  padding-left: 10px;
-}
-
-/* =========================
-   SPACING FIXES
-========================= */
-
-.archive {
-  max-width: 720px;
-}
-
-.page__content p {
-  margin-bottom: 12px;
-}
-
-/* =========================
-   MOBILE FRIENDLY
-========================= */
+/* ===============================
+   RESPONSIVE FIX
+================================ */
 
 @media (max-width: 768px) {
-  .page__content {
-    font-size: 15px;
+  .award-clean {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .page__content h1 {
-    font-size: 26px;
-  }
-
-  .page__content h2 {
-    font-size: 20px;
+  .award-right {
+    text-align: left;
+    white-space: normal;
+    min-width: auto;
   }
 }

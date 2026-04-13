@@ -77,27 +77,25 @@ body {
   max-width: 700px;
 }
 
-/* =========================================================
-   FORCE WHITE HEADER (MASTHEAD)
-   ========================================================= */
+/* ======================================================
+   FORCE LIGHT HEADER (Minimal Mistakes Correct Selectors)
+   ====================================================== */
 
-.masthead {
-  background: #ffffff !important;
-  position: relative !important;
-  z-index: 999 !important;
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav {
+  background-color: #ffffff !important;
 }
 
-/* Site title color */
-.masthead__menu-item a {
+/* Make header text dark */
+.masthead__menu-item a,
+.site-title {
   color: #222 !important;
 }
 
-/* Make nav links dark text */
-.greedy-nav a {
-  color: #222 !important;
-}
-
-/* Mobile menu icon color */
-.navicon {
+/* Hamburger icon (mobile) */
+.navicon,
+.navicon::before,
+.navicon::after {
   background: #222 !important;
 }

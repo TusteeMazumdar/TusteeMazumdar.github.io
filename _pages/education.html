@@ -14,12 +14,13 @@ author_profile: true
   position: relative;
   margin-top: 30px;
   padding-left: 30px;
-  border-left: 2px solid #e5e5e5;
+  border-left: 2px solid #e0e0e0;
 }
 
 .edu-item {
   position: relative;
   margin-bottom: 35px;
+  padding-left: 10px;
 }
 
 .edu-item::before {
@@ -27,8 +28,8 @@ author_profile: true
   position: absolute;
   left: -36px;
   top: 6px;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background: #2a7ae2;
   border-radius: 50%;
 }
@@ -36,23 +37,22 @@ author_profile: true
 .edu-title {
   font-size: 18px;
   font-weight: 700;
-  color: #2a7ae2;
-  margin-bottom: 4px;
 }
 
 .edu-degree {
-  font-size: 15px;
-  margin-bottom: 3px;
+  font-weight: 500;
+  margin-bottom: 6px;
 }
 
 .edu-meta {
   font-size: 14px;
   color: #666;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .edu-gpa {
   font-size: 14px;
+  color: #444;
 }
 
 .gpa-value {
@@ -61,56 +61,64 @@ author_profile: true
 }
 
 /* ===============================
-   HONORS & AWARDS
+   SECTION HEADER
 ================================ */
 
 .section-title {
-  margin-top: 45px;
+  margin-top: 40px;
   font-size: 22px;
   font-weight: 700;
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 6px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
 }
+
+/* ===============================
+   AWARDS – CLEAN TWO COLUMN
+================================ */
 
 .awards-clean {
   margin-top: 20px;
 }
 
-.award-clean {
+.award-row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 12px 0;
+  gap: 30px;
+  padding: 10px 0;
   border-bottom: 1px solid #eee;
-  gap: 25px;
+}
+
+.award-left {
+  flex: 1;
+  max-width: 70%;
 }
 
 .award-title {
-  font-size: 16px;
   font-weight: 600;
-  flex: 1;
   line-height: 1.4;
 }
 
 .award-right {
+  flex-shrink: 0;
   font-size: 14px;
   color: #666;
   white-space: nowrap;
-  min-width: 220px;
   text-align: right;
 }
 
-/* Mobile fix */
+/* ===============================
+   MOBILE
+================================ */
+
 @media (max-width: 768px) {
-  .award-clean {
+  .award-row {
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .award-right {
     text-align: left;
     white-space: normal;
-    min-width: auto;
   }
 }
 </style>
@@ -135,9 +143,9 @@ author_profile: true
     {% if edu.gpa %}
       <div class="edu-gpa">
         {% if edu.institution == "Asian University for Women" %}
-          CGPA: <span class="gpa-value">{{ edu.gpa }}</span>
+          <strong>CGPA:</strong> <span class="gpa-value">{{ edu.gpa }}</span>
         {% else %}
-          GPA: <span class="gpa-value">{{ edu.gpa }}</span>
+          <strong>GPA:</strong> <span class="gpa-value">{{ edu.gpa }}</span>
         {% endif %}
       </div>
     {% endif %}
@@ -156,10 +164,10 @@ author_profile: true
 <div class="awards-clean">
 
 {% for award in site.data.awards %}
-  <div class="award-clean">
+  <div class="award-row">
 
-    <div class="award-title">
-      {{ award.title }}
+    <div class="award-left">
+      <div class="award-title">{{ award.title }}</div>
     </div>
 
     <div class="award-right">

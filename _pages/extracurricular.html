@@ -1,41 +1,101 @@
 ---
 layout: single
 title: "Leadership & Extra-curricular Activities"
-permalink: /extracurricular/
+permalink: /leadership/
 author_profile: true
 ---
 
-{% assign sorted = site.data.experience | sort: "start" | reverse %}
+<style>
+/* Timeline container */
+.exp-timeline {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 30px;
+  border-left: 2px solid #e0e0e0;
+}
+
+/* Each item */
+.exp-item {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 12px;
+}
+
+.exp-item::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: #2a7ae2;
+  border-radius: 50%;
+}
+
+/* Title and date */
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.exp-title {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.exp-date {
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+}
+
+/* Organization */
+.exp-org {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+/* Description */
+.exp-desc {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-date {
+    white-space: normal;
+  }
+}
+</style>
 
 <div class="exp-timeline">
 
-{% assign current_year = "" %}
-
-{% for item in sorted %}
-
-  {% if item.start != current_year %}
-    <div class="exp-year">{{ item.start }}</div>
-    {% assign current_year = item.start %}
-  {% endif %}
-
+{% for item in site.data.eca %}
   <div class="exp-item">
 
     <div class="exp-header">
-      <div class="exp-title">
-        {{ item.role }} — {{ item.organization }}
-      </div>
-
-      <div class="exp-date">
-        {{ item.start }}–{{ item.end }}
-      </div>
+      <div class="exp-title">{{ item.title }}</div>
+      <div class="exp-date">{{ item.duration }}</div>
     </div>
 
-    <div class="exp-desc">
-      {{ item.description }}
-    </div>
+    <div class="exp-org">{{ item.organization }}</div>
+
+    {% if item.description %}
+      <div class="exp-desc">{{ item.description }}</div>
+    {% endif %}
 
   </div>
-
 {% endfor %}
 
 </div>

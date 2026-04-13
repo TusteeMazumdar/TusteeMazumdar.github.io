@@ -4,7 +4,7 @@ site_theme: "default"
 
 title: "Tustee Mazumdar"
 title_separator: "-"
-
+minimal_mistakes_skin: "default"
 name: "Tustee Mazumdar"
 description: "Tustee Mazumdar| Website"
 

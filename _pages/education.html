@@ -105,20 +105,23 @@ author_profile: true
 </div>
 
 <!-- AWARDS -->
+<!-- AWARDS -->
 <h2 class="section-title">Honors & Awards</h2>
 
 <div class="awards-clean">
 
 {% for award in site.data.awards %}
-
   <div class="award-clean">
-    <div class="award-title">{{ award.title }}</div>
-    <div class="award-meta">
-      {{ award.organization }}
-      {% if award.year %} — {{ award.year }}{% endif %}
+    
+    <div class="award-title">
+      {{ award.title }}
     </div>
-  </div>
 
+    <div class="award-right">
+      {{ award.organization }}{% if award.year %} — {{ award.year }}{% endif %}
+    </div>
+
+  </div>
 {% endfor %}
 
 </div>

@@ -1,6 +1,6 @@
 # Basic Site Settings
 locale: "en-US"
-minimal_mistakes_skin: "default"
+site_theme: "default"
 
 title: "Tustee Mazumdar"
 title_separator: "-"

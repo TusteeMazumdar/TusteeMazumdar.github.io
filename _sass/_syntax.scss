@@ -77,4 +77,48 @@ body {
   max-width: 700px;
 }
 
+/* =========================================================
+   FORCE LIGHT MODE — OVERRIDE THEME
+   ========================================================= */
 
+/* Global background */
+html,
+body,
+.page,
+.page__content,
+.sidebar,
+.initial-content,
+.archive {
+  background-color: #ffffff !important;
+  color: #222 !important;
+}
+
+/* Header / Navigation Bar */
+.masthead,
+.masthead__inner-wrap,
+.masthead__menu,
+.greedy-nav {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #222 !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+/* Header text & links */
+.masthead a,
+.greedy-nav a,
+.masthead__menu-item a {
+  color: #222 !important;
+}
+
+/* Remove dark hover */
+.greedy-nav a:hover {
+  background: none !important;
+  color: #000 !important;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #ffffff !important;
+  color: #222 !important;
+}

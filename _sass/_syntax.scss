@@ -82,8 +82,9 @@ body {
    ========================================================= */
 
 .masthead {
-  background-color: #ffffff !important;
-  border-bottom: 1px solid #e5e5e5 !important;
+  background: #ffffff !important;
+  position: relative !important;
+  z-index: 999 !important;
 }
 
 /* Site title color */

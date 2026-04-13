@@ -14,6 +14,7 @@ body {
   line-height: 1.85 !important;
   max-width: 680px !important;
   text-align: justify;
+  letter-spacing: 0.2px;
 }
 
 /* Paragraph spacing */
@@ -34,9 +35,7 @@ body {
   margin-top: 1.4em;
 }
 
-/* ---- Layout ---- */
-
-/* Center whole page */
+/* ---- Center page ---- */
 .page {
   max-width: 1000px !important;
   margin: 0 auto !important;
@@ -45,15 +44,10 @@ body {
 /* Sidebar size */
 .sidebar {
   width: 240px !important;
+  font-size: 14px;
 }
 
-/* Content + sidebar spacing */
-.layout--single .page {
-  display: flex;
-  gap: 40px;
-}
-
-/* Reduce content stretch */
+/* Content width control */
 .page__inner-wrap {
   max-width: 700px !important;
 }
@@ -68,30 +62,17 @@ body {
   text-decoration: underline;
 }
 
-/* ---- Lists (for news section) ---- */
+/* ---- Lists ---- */
 .page__content ul li {
   margin-bottom: 0.5em;
 }
 
-/* ---- Clean up bold text ---- */
+/* ---- Bold text ---- */
 .page__content strong {
   font-weight: 600;
 }
 
-/* ---- Improve readability ---- */
-.page__content {
-  letter-spacing: 0.2px;
-}
-
-/* ---- Optional: soften sidebar text ---- */
-.sidebar {
-  font-size: 14px;
-}
+/* ---- Archive container ---- */
 .archive {
   max-width: 700px;
 }
-/* ---- Fix container alignment ---- */
-.archive {
-  max-width: 700px;
-}
-

@@ -77,9 +77,9 @@ body {
   max-width: 700px;
 }
 
-/* ======================================================
-   FORCE LIGHT HEADER (Minimal Mistakes Correct Selectors)
-   ====================================================== */
+/* =========================================================
+   FORCE LIGHT HEADER / NAVBAR (DISABLE DARK HEADER)
+   ========================================================= */
 
 .masthead,
 .masthead__inner-wrap,
@@ -87,15 +87,23 @@ body {
   background-color: #ffffff !important;
 }
 
-/* Make header text dark */
+/* Navigation links + site title color */
 .masthead__menu-item a,
+.greedy-nav a,
 .site-title {
   color: #222 !important;
 }
 
-/* Hamburger icon (mobile) */
+/* Mobile menu icon (hamburger) */
 .navicon,
 .navicon::before,
 .navicon::after {
-  background: #222 !important;
+  background-color: #222 !important;
+}
+
+/* Prevent theme from re-applying dark mode */
+html[data-theme="dark"] .masthead,
+html[data-theme="dark"] .masthead__inner-wrap,
+html[data-theme="dark"] .greedy-nav {
+  background-color: #ffffff !important;
 }

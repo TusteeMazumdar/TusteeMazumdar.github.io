@@ -1,0 +1,30 @@
+/* ===== WHITE NAVBAR FIX ===== */
+
+.masthead {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.masthead__inner-wrap {
+  background-color: #ffffff !important;
+}
+
+.greedy-nav {
+  background: #ffffff !important;
+}
+
+/* Menu items */
+.masthead__menu-item a {
+  color: #666 !important;
+  font-weight: 500;
+}
+
+.masthead__menu-item a:hover {
+  color: #111 !important;
+}
+
+/* Site title */
+.site-title {
+  color: #333 !important;
+  font-weight: 600;
+}

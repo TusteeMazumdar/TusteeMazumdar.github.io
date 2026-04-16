@@ -16,12 +16,12 @@ My recent work centers on **ClimateNet**, a multi-task neural architecture desig
 Currently, I have a  goal of building **robust, trustworthy, and inclusive AI systems**, particularly for underrepresented languages and communities. I am interested in pursuing graduate studies where I can further explore these areas and contribute to advancing responsible and impactful AI research.
 
 ## Recent News
-- <span style="color:#b30000;">[2026]</span> 
+- <span style="color:#b30000;">[April 2026]</span> 
   Got selected as a Section Leader for [Standford Code In Place](https://codeinplace.stanford.edu/)
-- <span style="color:#b30000;">[2026]</span> 
+- <span style="color:#b30000;">[March 2026]</span> 
   [ClimateNet: A Multi-Faceted Classifier for Analyzing Climate Change Discourse](https://ieeexplore.ieee.org/document/11394695) got accepted at 
   [IEEE R10 HTC 2025](https://ieee-jp.org/section/tokyo/event/r10htc2025/)
 
-- <span style="color:#b30000;">[2026]</span> 
+- <span style="color:#b30000;">[January 2026]</span> 
   Best Student Thesis Award — Asian University for Women
 

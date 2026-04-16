@@ -5,7 +5,6 @@
   "vendor/breakpoint/breakpoint",
   "themes",
   "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-  "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
   "include/mixins",
   "vendor/susy/susy",
@@ -150,4 +149,61 @@ body {
 
 .site-title {
   color: #333 !important;
+}
+
+/* ===== CLEAN WHITE NAVBAR ===== */
+.masthead {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.masthead::before {
+  display: none !important;
+}
+
+.greedy-nav {
+  background: transparent !important;
+}
+
+.masthead__menu-item a {
+  color: #666 !important;
+}
+
+/* ===== REMOVE DARK FOOTER ===== */
+.page__footer {
+  background: #ffffff !important;
+  color: #666 !important;
+  border-top: 1px solid #e6e6e6;
+}
+
+/* ===== FIX NAV ALIGNMENT (RESTORE STRUCTURE) ===== */
+
+.masthead__inner-wrap {
+  max-width: 1100px;   /* keeps content centered like academic sites */
+  margin: 0 auto;
+  padding: 0 20px;     /* restore spacing */
+}
+
+/* Proper nav layout */
+.greedy-nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+/* Keep menu horizontal */
+.greedy-nav .visible-links {
+  display: flex !important;
+  gap: 20px;
+}
+
+/* Fix menu items */
+.masthead__menu-item {
+  margin: 0 !important;
+}
+
+/* Fix title alignment */
+.site-title {
+  margin-right: 20px;
+  white-space: nowrap;
 }

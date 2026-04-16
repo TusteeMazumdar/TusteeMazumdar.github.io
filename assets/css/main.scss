@@ -1,114 +1,63 @@
----
----
+/* ===== CLEAN WHITE THEME (SAFE) ===== */
 
-@import "vendor/breakpoint/breakpoint",
-        "themes",
-        "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-        "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
-        "include/mixins",
-        "vendor/susy/susy",
-
-        "layout/reset",
-        "layout/base",
-
-        "include/utilities",
-        "layout/tables",
-        "layout/buttons",
-        "layout/notices",
-        "layout/masthead",
-        "layout/navigation",
-        "layout/footer",
-        "syntax",
-
-        "layout/forms",
-        "layout/page",
-        "layout/archive",
-        "layout/sidebar",
-        "layout/json_cv",
-
-        "vendor/font-awesome/fontawesome",
-        "vendor/font-awesome/solid",
-        "vendor/font-awesome/brands";
-
-/* =========================================================
-   🔥 FULL WHITE CLEAN ACADEMIC OVERRIDE
-   ========================================================= */
-
-/* ===== RESET ALL BACKGROUNDS ===== */
+/* Page background */
 html, body {
   background: #ffffff !important;
   color: #222 !important;
 }
 
-/* Remove ALL dark containers */
-body *,
+/* Content areas */
 .page,
-.page__inner-wrap,
 .page__content,
 .sidebar,
-.masthead,
-.masthead__inner-wrap,
-.greedy-nav,
-.page__footer,
-.initial-content {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-
-/* Force main content white */
-.page,
-.page__content,
-.initial-content {
+.page__footer {
   background: #ffffff !important;
 }
 
-/* ===== REMOVE HEADER BAR ===== */
+/* ===== NAVBAR FIX (NO HEADER BAR) ===== */
+
 .masthead {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
   margin: 0 !important;
-  min-height: 0 !important;
-  position: static !important;
 }
 
-/* Remove inner spacing */
+/* Keep layout intact */
 .masthead__inner-wrap {
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 5px 0 !important;
 }
 
 /* Nav container */
 .greedy-nav {
   background: transparent !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  min-height: 0 !important;
 }
 
-/* Align nav cleanly */
+/* Nav alignment */
 .greedy-nav .visible-links {
   justify-content: flex-start !important;
 }
 
 /* Nav items */
-.masthead__menu-item {
-  margin: 0 !important;
-}
-
 .masthead__menu-item a {
-  padding: 4px 8px !important;
+  padding: 6px 10px !important;
   color: #444 !important;
-  font-size: 14px;
 }
 
-.masthead__menu-item a:hover {
-  color: #000 !important;
+/* Remove overlay ONLY where needed */
+.masthead::before {
+  display: none !important;
 }
 
-/* Site title */
-.site-title {
-  color: #222 !important;
+/* ===== TYPOGRAPHY ===== */
+
+body {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.page__content {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 700px;
 }

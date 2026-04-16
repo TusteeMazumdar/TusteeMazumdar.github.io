@@ -52,3 +52,74 @@
 }
 
 /* Keep spacing intact (DO NOT TOUCH layout) */
+/* =========================================================
+   CLEAN ACADEMIC STYLE (LIKE REFERENCE SITE)
+   ========================================================= */
+
+/* ===== PAGE BACKGROUND ===== */
+body {
+  background-color: #ffffff !important;
+  color: #222 !important;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* ===== REMOVE DARK FEEL ===== */
+.page,
+.page__content,
+.sidebar {
+  background-color: #ffffff !important;
+}
+
+/* ===== NAVBAR (LIKE HIS SITE) ===== */
+.masthead {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* remove dark overlay */
+.masthead::before {
+  display: none !important;
+}
+
+/* nav container */
+.greedy-nav {
+  background: transparent !important;
+}
+
+/* nav text */
+.masthead__menu-item a {
+  color: #666 !important;
+  font-size: 15px;
+}
+
+.masthead__menu-item a:hover {
+  color: #000 !important;
+}
+
+/* site title */
+.site-title {
+  color: #444 !important;
+  font-weight: 600;
+}
+
+/* ===== CONTENT WIDTH (IMPORTANT) ===== */
+.page__content {
+  max-width: 720px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ===== SIDEBAR CLEAN ===== */
+.sidebar {
+  font-size: 14px;
+}
+
+/* ===== LINKS ===== */
+.page__content a {
+  color: #2a7dbf;
+  text-decoration: none;
+}
+
+.page__content a:hover {
+  text-decoration: underline;
+}

@@ -9,7 +9,7 @@ redirect_from:
 
 Greetings!
 
-I am **Tustee Mazumdar**, a Computer Science graduate at **Asian University for Women**. My research interests lie in **Natural Language Processing (NLP)**, with a particular focus on low-resource languages, multi-task learning, and the development of socially impactful AI systems. I am especially interested in understanding complex discourse crisis-related narratives and in addressing challenges related to bias, fairness, and robustness in modern machine learning systems.
+I am **Tustee Mazumdar**, a Computer Science graduate at [**Asian University for Women** ](https://asian-university.org/). My research interests lie in **Natural Language Processing (NLP)**, with a particular focus on low-resource languages, multi-task learning, and the development of socially impactful AI systems. I am especially interested in understanding complex discourse crisis-related narratives and in addressing challenges related to bias, fairness, and robustness in modern machine learning systems.
 
 My recent work centers on **ClimateNet**, a multi-task neural architecture designed to analyze climate change discourse across multiple dimensions, including stance, relevance,  hate speech, its target, and its directions. Through this work, I aim to improve how machine learning models interpret nuanced and socially significant textual data, particularly in settings where labeled data is limited or inherently complex. This research also contributes to broader efforts in leveraging NLP for real-world societal challenges.
 

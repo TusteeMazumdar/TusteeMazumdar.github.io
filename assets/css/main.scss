@@ -1,63 +1,44 @@
-/* ===== CLEAN WHITE THEME (SAFE) ===== */
+/* ===== HARD RESET (REMOVE ALL THEME DARKNESS) ===== */
 
-/* Page background */
+/* Kill ALL backgrounds */
 html, body {
   background: #ffffff !important;
-  color: #222 !important;
 }
 
-/* Content areas */
+/* Remove ALL dark containers */
+body *,
+.masthead,
 .page,
+.page__inner-wrap,
 .page__content,
 .sidebar,
-.page__footer {
+.greedy-nav,
+.page__footer,
+.initial-content {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Force content white */
+.initial-content,
+.page,
+.page__content {
   background: #ffffff !important;
 }
 
-/* ===== NAVBAR FIX (NO HEADER BAR) ===== */
-
+/* REMOVE that top dark overlay completely */
 .masthead {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  position: static !important;
+  height: auto !important;
 }
 
-/* Keep layout intact */
-.masthead__inner-wrap {
-  padding: 5px 0 !important;
+/* Kill overlay pseudo elements */
+*::before,
+*::after {
+  background: none !important;
 }
 
-/* Nav container */
-.greedy-nav {
-  background: transparent !important;
-}
-
-/* Nav alignment */
-.greedy-nav .visible-links {
-  justify-content: flex-start !important;
-}
-
-/* Nav items */
-.masthead__menu-item a {
-  padding: 6px 10px !important;
-  color: #444 !important;
-}
-
-/* Remove overlay ONLY where needed */
-.masthead::before {
-  display: none !important;
-}
-
-/* ===== TYPOGRAPHY ===== */
-
+/* Fix text color */
 body {
-  font-family: "Times New Roman", Times, serif !important;
-}
-
-.page__content {
-  font-size: 18px;
-  line-height: 1.8;
-  max-width: 700px;
+  color: #222 !important;
 }

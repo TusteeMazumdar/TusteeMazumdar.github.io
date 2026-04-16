@@ -18,7 +18,6 @@ More Specifically, I have a  goal of building **robust, trustworthy, and inclusi
 ## Recent News
 - <span style="color:#b30000;">[2026]</span> 
   Got selected as a Section Leader for [Standford Code In Place](https://codeinplace.stanford.edu/)
-
 - <span style="color:#b30000;">[2026]</span> 
   [ClimateNet: A Multi-Faceted Classifier for Analyzing Climate Change Discourse](https://ieeexplore.ieee.org/document/11394695) got accepted at 
   [IEEE R10 HTC 2025](https://ieee-jp.org/section/tokyo/event/r10htc2025/)

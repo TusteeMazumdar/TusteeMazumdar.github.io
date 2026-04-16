@@ -123,3 +123,31 @@ body {
 .page__content a:hover {
   text-decoration: underline;
 }
+/* ===== FORCE REMOVE DARK NAV BAR ===== */
+
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+}
+
+/* Remove any dark overlay */
+.masthead::before {
+  display: none !important;
+}
+
+/* Remove shadow / dark feel */
+.masthead {
+  box-shadow: none !important;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* Ensure nav text visible */
+.masthead__menu-item a {
+  color: #555 !important;
+}
+
+.site-title {
+  color: #333 !important;
+}

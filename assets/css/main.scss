@@ -1,35 +1,54 @@
+---
+---
 
----
----
 @import
-    "vendor/breakpoint/breakpoint",
- "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+  "vendor/breakpoint/breakpoint",
+  "themes",
+  "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+  "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
-    "include/mixins",
-    "vendor/susy/susy",
+  "include/mixins",
+  "vendor/susy/susy",
 
-    "layout/reset",
-    "layout/base",
+  "layout/reset",
+  "layout/base",
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
-  
-    "layout/forms",
+  "include/utilities",
+  "layout/tables",
+  "layout/buttons",
+  "layout/notices",
+  "layout/masthead",
+  "layout/navigation",
+  "layout/footer",
+  "syntax",
 
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
+  "layout/forms",
+  "layout/page",
+  "layout/archive",
+  "layout/sidebar",
+  "layout/json_cv",
 
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
+  "vendor/font-awesome/fontawesome",
+  "vendor/font-awesome/solid",
+  "vendor/font-awesome/brands";
+
+
+/* ===== SAFE NAVBAR CLEAN ===== */
+
+/* White background */
+.masthead {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Remove dark tint */
+.masthead::before {
+  display: none !important;
+}
+
+/* Clean nav text */
+.masthead__menu-item a {
+  color: #444 !important;
+}
+
+/* Keep spacing intact (DO NOT TOUCH layout) */

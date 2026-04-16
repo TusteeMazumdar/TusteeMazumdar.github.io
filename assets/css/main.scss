@@ -207,3 +207,23 @@ body {
   margin-right: 20px;
   white-space: nowrap;
 }
+/* ===== NAVBAR TYPOGRAPHY FIX ===== */
+
+/* Make navbar use same font as body */
+.masthead,
+.masthead__menu-item a,
+.site-title {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+/* Increase menu font size */
+.masthead__menu-item a {
+  font-size: 17px;   /* you can tweak: 16–18 */
+  font-weight: 400;
+}
+
+/* Make site title slightly stronger */
+.site-title {
+  font-size: 18px;
+  font-weight: 600;
+}

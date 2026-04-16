@@ -41,3 +41,39 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+/* ===== FORCE WHITE THEME OVERRIDE ===== */
+
+html, body {
+  background-color: #ffffff !important;
+  color: #222 !important;
+}
+
+.page,
+.page__content,
+.sidebar,
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav,
+.page__footer {
+  background-color: #ffffff !important;
+}
+
+/* Remove dark overlay */
+.masthead::before,
+.page__hero--overlay {
+  display: none !important;
+}
+
+/* Navbar text */
+.masthead__menu-item a {
+  color: #555 !important;
+}
+
+.masthead__menu-item a:hover {
+  color: #000 !important;
+}
+
+/* Title */
+.site-title {
+  color: #222 !important;
+}

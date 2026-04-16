@@ -1,44 +1,35 @@
-/* ===== HARD RESET (REMOVE ALL THEME DARKNESS) ===== */
 
-/* Kill ALL backgrounds */
-html, body {
-  background: #ffffff !important;
-}
+---
+---
+@import
+    "vendor/breakpoint/breakpoint",
+ "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
-/* Remove ALL dark containers */
-body *,
-.masthead,
-.page,
-.page__inner-wrap,
-.page__content,
-.sidebar,
-.greedy-nav,
-.page__footer,
-.initial-content {
-  background-color: transparent !important;
-  background-image: none !important;
-}
+    "include/mixins",
+    "vendor/susy/susy",
 
-/* Force content white */
-.initial-content,
-.page,
-.page__content {
-  background: #ffffff !important;
-}
+    "layout/reset",
+    "layout/base",
 
-/* REMOVE that top dark overlay completely */
-.masthead {
-  position: static !important;
-  height: auto !important;
-}
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+  
+    "layout/forms",
 
-/* Kill overlay pseudo elements */
-*::before,
-*::after {
-  background: none !important;
-}
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv",
 
-/* Fix text color */
-body {
-  color: #222 !important;
-}
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands"
+;

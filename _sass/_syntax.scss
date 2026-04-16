@@ -77,35 +77,4 @@ body {
   max-width: 700px;
 }
 }
-/* ===== FORCE CLEAN WHITE NAVBAR ===== */
-.masthead {
-  background-color: #ffffff !important;
-  border-bottom: 1px solid #e5e5e5;
-}
 
-/* Navbar container */
-.masthead__inner-wrap {
-  background-color: #ffffff !important;
-}
-
-/* Menu items */
-.masthead__menu-item a {
-  color: #444 !important;
-  font-weight: 500;
-}
-
-/* Site title (your name) */
-.site-title {
-  color: #333 !important;
-  font-weight: 600;
-}
-
-/* Remove dark theme leftovers */
-.greedy-nav {
-  background: #ffffff !important;
-}
-
-/* Hover effect (clean like example) */
-.masthead__menu-item a:hover {
-  color: #000 !important;
-}

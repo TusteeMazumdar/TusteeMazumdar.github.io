@@ -1,80 +1,69 @@
 ---
 ---
 
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
+@import "vendor/breakpoint/breakpoint",
+        "themes",
+        "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+        "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
-@import
-    "vendor/breakpoint/breakpoint",
+        "include/mixins",
+        "vendor/susy/susy",
 
-    "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+        "layout/reset",
+        "layout/base",
 
-    "include/mixins",
-    "vendor/susy/susy",
+        "include/utilities",
+        "layout/tables",
+        "layout/buttons",
+        "layout/notices",
+        "layout/masthead",
+        "layout/navigation",
+        "layout/footer",
+        "syntax",
 
-    "layout/reset",
-    "layout/base",
+        "layout/forms",
+        "layout/page",
+        "layout/archive",
+        "layout/sidebar",
+        "layout/json_cv",
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
+        "vendor/font-awesome/fontawesome",
+        "vendor/font-awesome/solid",
+        "vendor/font-awesome/brands";
 
-    "layout/forms",
+/* =========================================================
+   🔥 FULL WHITE CLEAN ACADEMIC OVERRIDE
+   ========================================================= */
 
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
-    "layout/json_cv",
-
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
-;
-/* ===== FORCE WHITE THEME OVERRIDE ===== */
-
+/* ===== RESET ALL BACKGROUNDS ===== */
 html, body {
-  background-color: #ffffff !important;
+  background: #ffffff !important;
   color: #222 !important;
 }
 
+/* Remove ALL dark containers */
+body *,
 .page,
+.page__inner-wrap,
 .page__content,
 .sidebar,
 .masthead,
 .masthead__inner-wrap,
 .greedy-nav,
-.page__footer {
-  background-color: #ffffff !important;
+.page__footer,
+.initial-content {
+  background-color: transparent !important;
+  background-image: none !important;
 }
 
-/* Remove dark overlay */
-.masthead::before,
-.page__hero--overlay {
-  display: none !important;
+/* Force main content white */
+.page,
+.page__content,
+.initial-content {
+  background: #ffffff !important;
 }
 
-/* Navbar text */
-.masthead__menu-item a {
-  color: #555 !important;
-}
-
-.masthead__menu-item a:hover {
-  color: #000 !important;
-}
-/* ===== REMOVE HEADER BAR COMPLETELY ===== */
-
-/* Kill masthead box */
+/* ===== REMOVE HEADER BAR ===== */
 .masthead {
   background: transparent !important;
   border: none !important;
@@ -82,15 +71,16 @@ html, body {
   padding: 0 !important;
   margin: 0 !important;
   min-height: 0 !important;
+  position: static !important;
 }
 
-/* Remove inner wrapper spacing */
+/* Remove inner spacing */
 .masthead__inner-wrap {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-/* Make nav inline (no container feel) */
+/* Nav container */
 .greedy-nav {
   background: transparent !important;
   padding: 0 !important;
@@ -98,12 +88,12 @@ html, body {
   min-height: 0 !important;
 }
 
-/* Align everything left like academic sites */
+/* Align nav cleanly */
 .greedy-nav .visible-links {
   justify-content: flex-start !important;
 }
 
-/* Reduce nav item spacing */
+/* Nav items */
 .masthead__menu-item {
   margin: 0 !important;
 }
@@ -114,12 +104,52 @@ html, body {
   font-size: 14px;
 }
 
-/* Remove overlay completely */
-.masthead::before {
-  display: none !important;
+.masthead__menu-item a:hover {
+  color: #000 !important;
 }
 
-/* Title */
+/* Site title */
 .site-title {
   color: #222 !important;
+}
+
+/* ===== REMOVE ALL OVERLAYS ===== */
+.masthead::before,
+.page__hero,
+.page__hero--overlay,
+*::before,
+*::after {
+  background: none !important;
+}
+
+/* ===== SIDEBAR CLEAN ===== */
+.sidebar {
+  background: #ffffff !important;
+}
+
+/* ===== FOOTER CLEAN ===== */
+.page__footer {
+  background: #ffffff !important;
+  color: #666 !important;
+}
+
+/* ===== TYPOGRAPHY (ACADEMIC LOOK) ===== */
+body {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.page__content {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+/* ===== LINKS ===== */
+.page__content a {
+  color: #2a7dbf;
+  text-decoration: none;
+}
+
+.page__content a:hover {
+  text-decoration: underline;
 }

@@ -13,9 +13,11 @@ I am **Tustee Mazumdar**, a Computer Science graduate at **Asian University for 
 
 My recent work centers on **ClimateNet**, a multi-task neural architecture designed to analyze climate change discourse across multiple dimensions, including stance, relevance,  hate speech, its target, and its directions. Through this work, I aim to improve how machine learning models interpret nuanced and socially significant textual data, particularly in settings where labeled data is limited or inherently complex. This research also contributes to broader efforts in leveraging NLP for real-world societal challenges.
 
-More broadly, my research is motivated by the goal of building **robust, trustworthy, and inclusive AI systems**, particularly for underrepresented languages and communities. I am interested in pursuing graduate studies where I can further explore these areas and contribute to advancing responsible and impactful AI research.
+More Specifically, I have a  goal of building **robust, trustworthy, and inclusive AI systems**, particularly for underrepresented languages and communities. I am interested in pursuing graduate studies where I can further explore these areas and contribute to advancing responsible and impactful AI research.
 
 ## Recent News
+- <span style="color:#b30000;">[2026]</span> 
+  Got selected as a Section Leader for [Standford Code In Place](https://codeinplace.stanford.edu/)
 
 - <span style="color:#b30000;">[2025]</span> 
   [ClimateNet: A Multi-Faceted Classifier for Analyzing Climate Change Discourse](https://ieeexplore.ieee.org/document/11394695) got accepted at 

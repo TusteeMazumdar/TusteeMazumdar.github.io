@@ -16,6 +16,8 @@ My recent work centers on **ClimateNet**, a multi-task neural architecture desig
 Currently, I aim to build **robust, trustworthy, and inclusive AI systems**, particularly for underrepresented languages and communities, and pursue graduate studies to further advance responsible and impactful AI research.
 
 ## Recent News
+- <span style="color:#b30000;">[June 2026]</span>
+Got appointed as a **Student Research Mentor** for the *Introduction to Data Science* course at **Asian University for Women**, mentoring a six-member student research team in developing an IEEE-format NLP research paper.
 - <span style="color:#b30000;">[April 2026]</span> 
   Got selected as a Section Leader for [Standford Code In Place](https://codeinplace.stanford.edu/)!
 - <span style="color:#b30000;">[March 2026]</span> 

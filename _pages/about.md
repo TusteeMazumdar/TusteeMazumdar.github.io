@@ -9,13 +9,18 @@ redirect_from:
 
 Greetings!
 
-I am **Tustee Mazumdar**, a Computer Science graduate at [**Asian University for Women** ](https://asian-university.org/). My research interests lie in **Natural Language Processing (NLP)**, with a particular focus on low-resource languages, multi-task learning, and the development of socially impactful AI systems. I am especially interested in understanding complex discourse crisis-related narratives and in addressing challenges related to bias, fairness, and robustness in modern machine learning systems.
+I am **Tustee Mazumdar**, currently an **AI Safety Research Fellow** at the [PRISM AI Safety Research Fellowship](https://prism-research.org/), an initiative by [Women Who Do Data (W2D2)](https://www.womenwhodata.org/), where I work on **Trust Calibration in Healthcare AI**.
 
-My recent work centers on **ClimateNet**, a multi-task neural architecture designed to analyze climate change discourse across multiple dimensions, including stance, relevance,  hate speech, its target, and its directions. Through this work, I aim to improve how transformer models interpret nuanced and socially significant textual data, particularly in settings where labeled data is limited or inherently complex. This research also contributes to broader efforts in leveraging NLP for real-world societal challenges.
+I graduated with a **B.Sc. in Computer Science** from [**Asian University for Women**](https://asian-university.org/).
 
-Currently, I aim to build **robust, trustworthy, and inclusive AI systems**, particularly for underrepresented languages and communities, and pursue graduate studies to further advance responsible and impactful AI research.
+My research interests lie at the intersection of Natural Language Processing (NLP), Trustworthy AI, and AI Safety. During my undergraduate thesis, I developed **ClimateNet**, a multi-task neural architecture for analyzing climate change discourse across multiple dimensions, including relevance, stance, hate speech, target identification, humor, and narrative direction. This work explores how transformer-based models can better understand complex, socially significant textual data while improving performance across multiple related tasks.
+
+Ultimately, I aspire to build **robust, trustworthy, and inclusive AI systems** that are reliable in high-stakes settings and accessible to underrepresented languages and communities.
+
 
 ## Recent News
+- <span style="color:#b30000;">[June 2026]</span>
+  Joined the **[PRISM AI Safety Research Fellowship](https://prism-research.org/)** as an **AI Safety Research Fellow**, working on **Trust Calibration in Healthcare AI** under the mentorship of **Dr. Zeenath Reza Khan**.
 - <span style="color:#b30000;">[June 2026]</span>
 Got appointed as a **Student Research Mentor** for the *Introduction to Data Science* course at **Asian University for Women**, mentoring a six-member student research team in developing an IEEE-format NLP research paper.
 - <span style="color:#b30000;">[April 2026]</span> 

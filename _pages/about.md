@@ -9,9 +9,7 @@ redirect_from:
 
 Greetings!
 
-I am **Tustee Mazumdar**, currently an **AI Safety Research Fellow** at the [PRISM AI Safety Research Fellowship](https://prism-research.org/), an initiative by [Women Who Do Data (W2D2)](https://www.womenwhodata.org/), where I work on **Trust Calibration in Healthcare AI**.
-
-I graduated with a **B.Sc. in Computer Science** from [**Asian University for Women**](https://asian-university.org/).
+I am **Tustee Mazumdar**, currently an **AI Safety Research Fellow** at the [PRISM AI Safety Research Fellowship](https://prism-research.org/), an initiative by [Women Who Do Data (W2D2)](https://www.womenwhodata.org/), where I work on **Trust Calibration in Healthcare AI**. I graduated with a **B.Sc. in Computer Science** from [**Asian University for Women**](https://asian-university.org/).
 
 My research interests lie at the intersection of Natural Language Processing (NLP), Trustworthy AI, and AI Safety. During my undergraduate thesis, I developed **ClimateNet**, a multi-task neural architecture for analyzing climate change discourse across multiple dimensions, including relevance, stance, hate speech, target identification, humor, and narrative direction. This work explores how transformer-based models can better understand complex, socially significant textual data while improving performance across multiple related tasks.
 

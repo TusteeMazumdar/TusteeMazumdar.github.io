@@ -1,0 +1,561 @@
+---
+layout: single
+title: "Awards & Honors"
+permalink: /awards/
+author_profile: true
+---
+
+<div class="awards-intro">
+
+  <p class="awards-lead">
+    Recognition of academic achievement, research excellence,
+    leadership, and community engagement.
+  </p>
+
+</div>
+
+
+<style>
+
+/* ========================================
+   INTRO
+   ======================================== */
+
+.awards-intro {
+  margin-bottom: 35px;
+}
+
+.awards-lead {
+  font-size: 17px;
+  line-height: 1.75;
+  max-width: 850px;
+  color: #555;
+}
+
+
+/* ========================================
+   AWARDS GRID
+   ======================================== */
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+
+/* ========================================
+   AWARD CARD
+   ======================================== */
+
+.award-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 22px rgba(0,0,0,0.08);
+  border-color: #c8c8c8;
+}
+
+
+/* ========================================
+   FEATURED AWARD
+   ======================================== */
+
+.award-card.featured {
+  border-left: 4px solid #333;
+}
+
+.award-featured-label {
+  display: inline-block;
+
+  padding: 3px 9px;
+  margin-bottom: 9px;
+
+  border: 1px solid #bbb;
+  border-radius: 20px;
+
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: #555;
+}
+
+
+/* ========================================
+   IMAGE
+   ======================================== */
+
+.award-image {
+  width: 100%;
+  height: 220px;
+
+  overflow: hidden;
+
+  background: #f6f6f6;
+  border-bottom: 1px solid #eee;
+}
+
+.award-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.35s ease;
+}
+
+.award-card:hover .award-image img {
+  transform: scale(1.035);
+}
+
+
+/* ========================================
+   CONTENT
+   ======================================== */
+
+.award-content {
+  padding: 20px 22px 23px;
+}
+
+.award-year {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+
+  margin-bottom: 7px;
+}
+
+.award-title {
+  font-size: 20px;
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  margin-bottom: 8px;
+}
+
+.award-institution {
+  font-size: 14.5px;
+  font-style: italic;
+  color: #555;
+
+  margin-bottom: 12px;
+}
+
+.award-description {
+  font-size: 15px;
+  line-height: 1.65;
+
+  margin: 0;
+}
+
+
+/* ========================================
+   TEXT-ONLY CARDS
+   ======================================== */
+
+.award-card.text-only {
+  display: flex;
+  align-items: stretch;
+}
+
+.award-card.text-only .award-content {
+  width: 100%;
+}
+
+
+/* ========================================
+   SMALL ACADEMIC DETAILS
+   ======================================== */
+
+.award-detail {
+  margin-top: 13px;
+
+  padding-top: 12px;
+
+  border-top: 1px solid #eee;
+
+  font-size: 13.5px;
+  color: #666;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media screen and (max-width: 750px) {
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .award-image {
+    height: 200px;
+  }
+
+  .award-title {
+    font-size: 18px;
+  }
+
+}
+
+</style>
+
+
+
+<div class="awards-grid">
+
+
+  <!-- =====================================
+       BEST STUDENT THESIS AWARD
+       ===================================== -->
+
+  <div class="award-card featured">
+
+    <div class="award-image">
+
+      <img
+        src="/images/best-thesis-award.png"
+        alt="Best Student Thesis Award"
+      >
+
+    </div>
+
+
+    <div class="award-content">
+
+      <div class="award-featured-label">
+        Research Excellence
+      </div>
+
+      <div class="award-year">
+        2025
+      </div>
+
+      <div class="award-title">
+        Best Student Thesis Award
+      </div>
+
+      <div class="award-institution">
+        Asian University for Women
+      </div>
+
+      <p class="award-description">
+        Awarded for outstanding undergraduate thesis research on
+        <em>ClimateNet: A Multi-Faceted Classifier for Analyzing
+        Climate Change Discourse.</em>
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================
+       MAGNA CUM LAUDE
+       ===================================== -->
+
+  <div class="award-card">
+
+    <div class="award-image">
+
+      <img
+        src="/images/magna-cum-laude.png"
+        alt="Magna Cum Laude"
+      >
+
+    </div>
+
+
+    <div class="award-content">
+
+      <div class="award-year">
+        2025
+      </div>
+
+      <div class="award-title">
+        Magna Cum Laude
+      </div>
+
+      <div class="award-institution">
+        Asian University for Women
+      </div>
+
+      <p class="award-description">
+        Awarded for academic excellence upon graduation.
+      </p>
+
+      <div class="award-detail">
+        Academic distinction recognizing exceptional undergraduate
+        performance.
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================
+       UNIVERSITY HONORS
+       ===================================== -->
+
+  <div class="award-card">
+
+    <div class="award-image">
+
+      <img
+        src="/images/university-honors.png"
+        alt="University Honors"
+      >
+
+    </div>
+
+
+    <div class="award-content">
+
+      <div class="award-year">
+        2022–2025
+      </div>
+
+      <div class="award-title">
+        University Honors
+      </div>
+
+      <div class="award-institution">
+        Asian University for Women
+      </div>
+
+      <p class="award-description">
+        Received University Honors in 6 out of 8 semesters.
+      </p>
+
+      <div class="award-detail">
+        Fall 2022 · Spring 2023 · Fall 2023 · Spring 2024 ·
+        Fall 2024 · Spring 2025
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================
+       GLOBAL COMMUNITY AWARDS
+       ===================================== -->
+
+  <div class="award-card">
+
+    <div class="award-image">
+
+      <img
+        src="/images/global-community-awards.png"
+        alt="Global Community Awards"
+      >
+
+    </div>
+
+
+    <div class="award-content">
+
+      <div class="award-year">
+        2025
+      </div>
+
+      <div class="award-title">
+        Global 25% Campus Director — Nominee
+      </div>
+
+      <div class="award-institution">
+        Hult Prize Foundation
+      </div>
+
+      <p class="award-description">
+        Recognized among the top 25% of Campus Directors
+        through the Global Community Awards.
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================
+       CLIMATE JUSTICE IDEA COMPETITION
+       ===================================== -->
+
+  <div class="award-card">
+
+    <div class="award-image">
+
+      <img
+        src="/images/climate-justice-runner-up.png"
+        alt="Climate Justice Idea Competition"
+      >
+
+    </div>
+
+
+    <div class="award-content">
+
+      <div class="award-year">
+        2025
+      </div>
+
+      <div class="award-title">
+        1st Runner-Up — Climate Justice Idea Competition
+      </div>
+
+      <div class="award-institution">
+        ActionAid Bangladesh
+      </div>
+
+      <p class="award-description">
+        Recognized as the 1st Runner-Up in the Climate Justice
+        Idea Competition.
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================
+       ECO-BUSINESS COMPETITION
+       ===================================== -->
+
+  <div class="award-card">
+
+    <div class="award-image">
+
+      <img
+        src="/images/eco-business-runner-up.png"
+        alt="AUW Eco-Business Competition"
+      >
+
+    </div>
+
+
+    <div class="award-content">
+
+      <div class="award-year">
+        2025
+      </div>
+
+      <div class="award-title">
+        2nd Runner-Up — AUW Eco-Business Competition
+      </div>
+
+      <div class="award-institution">
+        Asian University for Women
+      </div>
+
+      <p class="award-description">
+        Recognized as the 2nd Runner-Up in the AUW
+        Eco-Business Competition.
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================
+       SSC SCHOLARSHIP
+       NO IMAGE
+       ===================================== -->
+
+  <div class="award-card text-only">
+
+    <div class="award-content">
+
+      <div class="award-year">
+        2019
+      </div>
+
+      <div class="award-title">
+        Government Board Scholarship
+      </div>
+
+      <div class="award-institution">
+        Secondary School Certificate — General Grade
+      </div>
+
+      <p class="award-description">
+        Government Board Scholarship awarded for academic
+        performance in the Secondary School Certificate examination.
+      </p>
+
+      <div class="award-detail">
+        Dr. Khastagir Government Girls’ High School
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================
+       JSC SCHOLARSHIP
+       NO IMAGE
+       ===================================== -->
+
+  <div class="award-card text-only">
+
+    <div class="award-content">
+
+      <div class="award-year">
+        2016
+      </div>
+
+      <div class="award-title">
+        Government Board Scholarship
+      </div>
+
+      <div class="award-institution">
+        Junior School Certificate — General Grade
+      </div>
+
+      <p class="award-description">
+        Government Board Scholarship awarded for academic
+        performance in the Junior School Certificate examination.
+      </p>
+
+      <div class="award-detail">
+        Dr. Khastagir Government Girls’ High School
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>

@@ -6,7 +6,7 @@ date: 2026-01-01
 venue: "Manuscript in Preparation"
 paperurl: "#"
 confurl: "#"
-image: "/images/climatenetblend-x.png"
+image: "/images/Screenshot 2026-09-01 133613.png"
 category: ongoing
 ---
 

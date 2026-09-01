@@ -4,113 +4,881 @@ title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
-"To teach is to learn twice." — Joseph Joubert
+
+<div class="teaching-intro">
+  <p>
+    "To teach is to learn twice." — Joseph Joubert
+  </p>
+
+  <p class="teaching-summary">
+    My teaching experience spans computer science, programming, mathematics,
+    and digital literacy, with an emphasis on hands-on learning,
+    problem-solving, and individualized student support.
+  </p>
+</div>
 
 
 <style>
-.teach-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  overflow: hidden;
+
+/* ================================
+   TEACHING PAGE
+   ================================ */
+
+.teaching-intro {
+  margin-bottom: 38px;
 }
+
+.teaching-intro > p:first-child {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.teaching-summary {
+  max-width: 850px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #555;
+}
+
+
+/* ================================
+   CARD
+   ================================ */
+
+.teach-card {
+  position: relative;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  background: #fff;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.teach-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+  border-color: #c8c8c8;
+}
+
+
+/* Featured Stanford card */
+
+.teach-card.featured {
+  border-left: 4px solid #333;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
 
 .teach-header {
-  padding: 12px 16px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 17px;
-  background: #f9f9f9;
+  padding: 19px 22px;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+
+  cursor: pointer;
+
+  background: linear-gradient(
+    to right,
+    #fafafa,
+    #f7f7f7
+  );
 }
+
 
 .teach-header:hover {
-  background: #f1f1f1;
+  background: #f5f5f5;
 }
+
+
+.teach-main {
+  min-width: 0;
+}
+
+
+.teach-role {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 5px;
+}
+
+
+.teach-institution {
+  font-size: 14.5px;
+  font-style: italic;
+  color: #555;
+}
+
+
+.teach-right {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  flex-shrink: 0;
+}
+
+
+.teach-date {
+  font-size: 14.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+.teach-arrow {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ccc;
+  border-radius: 50%;
+
+  font-size: 12px;
+
+  transition:
+    transform 0.25s ease,
+    background 0.2s ease;
+}
+
+
+.teach-header:hover .teach-arrow {
+  background: #fff;
+}
+
+
+/* ================================
+   FEATURE LABEL
+   ================================ */
+
+.teach-featured-label {
+  display: inline-block;
+
+  margin-bottom: 8px;
+  padding: 3px 9px;
+
+  border: 1px solid #bbb;
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+
+/* ================================
+   BODY
+   ================================ */
 
 .teach-body {
-  display: none;
-  padding: 15px;
-  line-height: 1.6;
-  font-size: 15px;
+  max-height: 0;
+  overflow: hidden;
+
+  transition:
+    max-height 0.45s ease,
+    padding 0.35s ease;
+
+  padding: 0 23px;
 }
 
-.teach-meta {
-  font-style: italic;
-  margin-bottom: 8px;
+
+.teach-body.open {
+  max-height: 900px;
+  padding: 23px;
 }
+
+
+/* ================================
+   CONTENT
+   ================================ */
+
+.teach-content {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+
+/* ================================
+   IMAGE
+   ================================ */
+
+.teach-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+}
+
+
+.teach-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.25s ease;
+}
+
+
+.teach-card:hover .teach-image img {
+  transform: scale(1.025);
+}
+
+
+/* ================================
+   DETAILS
+   ================================ */
+
+.teach-details {
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+
+.teach-details p {
+  margin-top: 0;
+}
+
+
+.teach-details ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+
+.teach-details li {
+  margin-bottom: 10px;
+}
+
+
+.teach-details li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ================================
+   TAGS
+   ================================ */
+
+.teach-tags {
+  margin-top: 17px;
+}
+
+
+.teach-tag {
+  display: inline-block;
+
+  margin-right: 6px;
+  margin-bottom: 6px;
+
+  padding: 4px 9px;
+
+  border: 1px solid #d4d4d4;
+  border-radius: 15px;
+
+  font-size: 12px;
+  line-height: 1.2;
+
+  color: #555;
+  background: #fafafa;
+}
+
+
+/* ================================
+   SUPERVISOR
+   ================================ */
+
+.teach-supervisor {
+  margin-top: 17px;
+  padding-top: 13px;
+
+  border-top: 1px solid #eee;
+
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media screen and (max-width: 750px) {
+
+  .teach-header {
+    align-items: flex-start;
+  }
+
+  .teach-right {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .teach-date {
+    white-space: normal;
+    text-align: right;
+  }
+
+  .teach-content {
+    grid-template-columns: 1fr;
+  }
+
+  .teach-image {
+    max-width: 330px;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .teach-header {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .teach-role {
+    font-size: 17px;
+  }
+
+  .teach-right {
+    display: none;
+  }
+
+  .teach-body.open {
+    padding: 17px;
+  }
+
+}
+
 </style>
 
+
 <script>
-function toggleTeach(id) {
-  var x = document.getElementById(id);
-  x.style.display = (x.style.display === "block") ? "none" : "block";
+
+function toggleTeach(id, arrowId) {
+
+  var body = document.getElementById(id);
+  var arrow = document.getElementById(arrowId);
+
+  if (body.classList.contains("open")) {
+
+    body.classList.remove("open");
+    arrow.innerHTML = "↓";
+
+  } else {
+
+    body.classList.add("open");
+    arrow.innerHTML = "↑";
+
+  }
+
 }
+
 </script>
 
-<!-- ================= TEACHING ITEMS ================= -->
+
+
+<!-- ==================================================
+     STANFORD UNIVERSITY
+     ================================================== -->
+
+<div class="teach-card featured">
+
+  <div class="teach-header"
+       onclick="toggleTeach('t0','a0')">
+
+    <div class="teach-main">
+
+      <div class="teach-featured-label">
+        Recent Teaching Experience
+      </div>
+
+      <div class="teach-role">
+        Student Tutor / Section Leader — Code in Place (CS106A)
+      </div>
+
+      <div class="teach-institution">
+        Stanford University
+      </div>
+
+    </div>
+
+
+    <div class="teach-right">
+
+      <div class="teach-date">
+        April 2026 – May 28, 2026
+      </div>
+
+      <div class="teach-arrow" id="a0">
+        ↓
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div id="t0" class="teach-body">
+
+    <div class="teach-content">
+
+      <div class="teach-image">
+
+        <img src="/images/stanford-teaching.png"
+             alt="Stanford Code in Place teaching">
+
+      </div>
+
+
+      <div class="teach-details">
+
+        <ul>
+
+          <li>
+            <strong>Class Size:</strong>
+            15 students
+          </li>
+
+          <li>
+            <strong>Role:</strong>
+            Led Python programming sessions based on Stanford's
+            CS106A curriculum and supported students through
+            hands-on coding exercises and problem solving.
+          </li>
+
+          <li>
+            <strong>Teaching Focus:</strong>
+            Problem decomposition, variables, conditionals,
+            loops, functions, lists, dictionaries, graphics,
+            and animations.
+          </li>
+
+          <li>
+            <strong>Approach:</strong>
+            Guided students through practical exercises while
+            helping them develop programming and computational
+            problem-solving skills.
+          </li>
+
+        </ul>
+
+
+        <div class="teach-tags">
+
+          <span class="teach-tag">Python</span>
+          <span class="teach-tag">CS106A</span>
+          <span class="teach-tag">Problem Solving</span>
+          <span class="teach-tag">Programming</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     COMPUTER LITERACY
+     ================================================== -->
 
 <div class="teach-card">
-  <div class="teach-header" onclick="toggleTeach('t1')">
-    Instructor Teaching Assistant — Computer Literacy
-    <span>Spring 2024</span>
+
+  <div class="teach-header"
+       onclick="toggleTeach('t1','a1')">
+
+    <div class="teach-main">
+
+      <div class="teach-role">
+        Instructor Teaching Assistant — Computer Literacy
+      </div>
+
+      <div class="teach-institution">
+        Asian University for Women
+      </div>
+
+    </div>
+
+
+    <div class="teach-right">
+
+      <div class="teach-date">
+        Spring 2024
+      </div>
+
+      <div class="teach-arrow" id="a1">
+        ↓
+      </div>
+
+    </div>
+
   </div>
+
+
   <div id="t1" class="teach-body">
-    <div class="teach-meta">Asian University for Women</div>
-    <ul>
-      <li><strong>Class Size:</strong> 35 students</li>
-      <li><strong>Task:</strong> Delivered lectures and hands-on lab sessions (MS Word, Excel, PowerPoint)</li>
-      <li><strong>Focus:</strong> Digital literacy and practical applications</li>
-      <li><strong>Supervisor:</strong> Ms. Khadija Kubra</li>
-    </ul>
+
+    <div class="teach-content">
+
+      <div class="teach-image">
+
+        <img src="/images/computer-literacy-teaching.png"
+             alt="Computer Literacy teaching">
+
+      </div>
+
+
+      <div class="teach-details">
+
+        <ul>
+
+          <li>
+            <strong>Class Size:</strong>
+            35 students
+          </li>
+
+          <li>
+            <strong>Task:</strong>
+            Delivered lectures and hands-on laboratory sessions
+            covering MS Word, Excel, and PowerPoint.
+          </li>
+
+          <li>
+            <strong>Focus:</strong>
+            Digital literacy and practical applications.
+          </li>
+
+        </ul>
+
+
+        <div class="teach-tags">
+
+          <span class="teach-tag">Digital Literacy</span>
+          <span class="teach-tag">MS Word</span>
+          <span class="teach-tag">Excel</span>
+          <span class="teach-tag">PowerPoint</span>
+
+        </div>
+
+
+        <div class="teach-supervisor">
+          <strong>Supervisor:</strong> Ms. Khadija Kubra
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
 </div>
 
+
+
+<!-- ==================================================
+     CALCULUS I
+     ================================================== -->
+
 <div class="teach-card">
-  <div class="teach-header" onclick="toggleTeach('t2')">
-    Teaching Assistant — Calculus I
-    <span>Summer 2023 | Fall 2023 | Spring 2024</span>
+
+  <div class="teach-header"
+       onclick="toggleTeach('t2','a2')">
+
+    <div class="teach-main">
+
+      <div class="teach-role">
+        Teaching Assistant — Calculus I
+      </div>
+
+      <div class="teach-institution">
+        Asian University for Women
+      </div>
+
+    </div>
+
+
+    <div class="teach-right">
+
+      <div class="teach-date">
+        Summer 2023 · Fall 2023 · Spring 2024
+      </div>
+
+      <div class="teach-arrow" id="a2">
+        ↓
+      </div>
+
+    </div>
+
   </div>
+
+
   <div id="t2" class="teach-body">
-    <div class="teach-meta">Asian University for Women</div>
-    <ul>
-      <li><strong>Class Size:</strong> 2 sections, 30 students each</li>
-      <li><strong>Task:</strong> Mentoring on limits, differentiation, integration</li>
-      <li><strong>Focus:</strong> Problem-solving and optimization techniques</li>
-      <li><strong>Supervisor:</strong> Md. Farhad Uddin</li>
-    </ul>
+
+    <div class="teach-content">
+
+      <div class="teach-image">
+
+        <img src="/images/calculus-teaching.png"
+             alt="Calculus I teaching">
+
+      </div>
+
+
+      <div class="teach-details">
+
+        <ul>
+
+          <li>
+            <strong>Class Size:</strong>
+            2 sections, 30 students each
+          </li>
+
+          <li>
+            <strong>Task:</strong>
+            Led discussions and provided individual mentoring
+            on limits, differentiation, and integration.
+          </li>
+
+          <li>
+            <strong>Focus:</strong>
+            Optimization and related-rates problem solving.
+          </li>
+
+        </ul>
+
+
+        <div class="teach-tags">
+
+          <span class="teach-tag">Calculus</span>
+          <span class="teach-tag">Problem Solving</span>
+          <span class="teach-tag">Mentoring</span>
+
+        </div>
+
+
+        <div class="teach-supervisor">
+          <strong>Supervisor:</strong> Md. Farhad Uddin
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
 </div>
 
+
+
+<!-- ==================================================
+     INTRODUCTION TO COMPUTER SCIENCE
+     ================================================== -->
+
 <div class="teach-card">
-  <div class="teach-header" onclick="toggleTeach('t3')">
-    Teaching Assistant — Introduction to Computer Science (CS50)
-    <span>Spring 2023 | Fall 2023</span>
+
+  <div class="teach-header"
+       onclick="toggleTeach('t3','a3')">
+
+    <div class="teach-main">
+
+      <div class="teach-role">
+        Teaching Assistant — Introduction to Computer Science (CS50)
+      </div>
+
+      <div class="teach-institution">
+        Asian University for Women
+      </div>
+
+    </div>
+
+
+    <div class="teach-right">
+
+      <div class="teach-date">
+        Spring 2023 · Fall 2023
+      </div>
+
+      <div class="teach-arrow" id="a3">
+        ↓
+      </div>
+
+    </div>
+
   </div>
+
+
   <div id="t3" class="teach-body">
-    <div class="teach-meta">Asian University for Women</div>
-    <ul>
-      <li><strong>Class Size:</strong> 40+ students</li>
-      <li><strong>Task:</strong> Weekly labs (C, Python, SQL, Web Dev)</li>
-      <li><strong>Focus:</strong> Hands-on programming</li>
-      <li><strong>Supervisor:</strong> Dr. Lutfun Nahar</li>
-    </ul>
+
+    <div class="teach-content">
+
+      <div class="teach-image">
+
+        <img src="/images/cs50-teaching.png"
+             alt="Introduction to Computer Science teaching">
+
+      </div>
+
+
+      <div class="teach-details">
+
+        <ul>
+
+          <li>
+            <strong>Class Size:</strong>
+            40+ students
+          </li>
+
+          <li>
+            <strong>Task:</strong>
+            Facilitated weekly laboratory sessions covering
+            C, Python, SQL, and web development.
+          </li>
+
+          <li>
+            <strong>Focus:</strong>
+            Hands-on programming and implementation of
+            core computer science concepts.
+          </li>
+
+        </ul>
+
+
+        <div class="teach-tags">
+
+          <span class="teach-tag">C</span>
+          <span class="teach-tag">Python</span>
+          <span class="teach-tag">SQL</span>
+          <span class="teach-tag">Web Development</span>
+
+        </div>
+
+
+        <div class="teach-supervisor">
+          <strong>Supervisor:</strong> Dr. Lutfun Nahar
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
 </div>
 
+
+
+<!-- ==================================================
+     PRECALCULUS
+     ================================================== -->
+
 <div class="teach-card">
-  <div class="teach-header" onclick="toggleTeach('t4')">
-    Teaching Assistant — Precalculus
-    <span>Spring 2023 | Fall 2023</span>
+
+  <div class="teach-header"
+       onclick="toggleTeach('t4','a4')">
+
+    <div class="teach-main">
+
+      <div class="teach-role">
+        Teaching Assistant — Precalculus
+      </div>
+
+      <div class="teach-institution">
+        AUW Pre-UG Math Learning Center
+      </div>
+
+    </div>
+
+
+    <div class="teach-right">
+
+      <div class="teach-date">
+        Spring 2023 · Fall 2023
+      </div>
+
+      <div class="teach-arrow" id="a4">
+        ↓
+      </div>
+
+    </div>
+
   </div>
+
+
   <div id="t4" class="teach-body">
-    <div class="teach-meta">AUW Pre-UG Math Learning Center</div>
-    <ul>
-      <li><strong>Class Size:</strong> 5–10 students</li>
-      <li><strong>Task:</strong> Individual & group sessions</li>
-      <li><strong>Focus:</strong> Math fundamentals</li>
-      <li><strong>Supervisor:</strong> Md. Noman Uddin</li>
-    </ul>
+
+    <div class="teach-content">
+
+      <div class="teach-image">
+
+        <img src="/images/precalculus-teaching.png"
+             alt="Precalculus teaching">
+
+      </div>
+
+
+      <div class="teach-details">
+
+        <ul>
+
+          <li>
+            <strong>Class Size:</strong>
+            5–10 students
+          </li>
+
+          <li>
+            <strong>Task:</strong>
+            Conducted individual and group mentoring sessions.
+          </li>
+
+          <li>
+            <strong>Focus:</strong>
+            Foundational mathematics concepts and
+            problem-solving.
+          </li>
+
+        </ul>
+
+
+        <div class="teach-tags">
+
+          <span class="teach-tag">Mathematics</span>
+          <span class="teach-tag">Mentoring</span>
+          <span class="teach-tag">Problem Solving</span>
+
+        </div>
+
+
+        <div class="teach-supervisor">
+          <strong>Supervisor:</strong> Md. Noman Uddin
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
 </div>

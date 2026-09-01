@@ -9,12 +9,22 @@ author_profile: true
 
 <div style="margin-bottom: 40px;">
 
-  <!-- Title -->
-  <h3 style="margin-bottom: 6px;">
+<!-- Title -->
+<h3 style="margin-bottom: 6px;">
+
+  {% if post.paperurl and post.paperurl != "#" and post.paperurl != "" %}
+
     <a href="{{ post.paperurl }}" target="_blank" rel="noopener">
       {{ post.title }}
     </a>
-  </h3>
+
+  {% else %}
+
+    {{ post.title }}
+
+  {% endif %}
+
+</h3>
 
  <!-- Venue -->
 <p style="margin: 4px 0;">

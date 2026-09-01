@@ -8,6 +8,7 @@ paperurl: "#"
 confurl: "https://neurips2026haic.com/"
 image: "/images/Screenshot 2026-09-01 133133.png"
 category: conferences
+status: "Submitted"
 ---
 
 Authors: Zeenath Reza Khan^{*}, Favour Chisom Akabogu^{*}, Kumari Neha Priya^{*}, Rokhaya Diagne^{*}, Tustee Mazumdar^{*}

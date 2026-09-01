@@ -16,8 +16,25 @@ author_profile: true
     </a>
   </h3>
 
-  <!-- Venue -->
-  <p style="margin: 4px 0;">
+ <!-- Venue -->
+<p style="margin: 4px 0;">
+
+  {% if post.status %}
+
+    {{ post.status }}
+    <em>
+      {% if post.confurl and post.confurl != "#" %}
+        <a href="{{ post.confurl }}" target="_blank" rel="noopener">
+          {{ post.venue }}
+        </a>
+      {% else %}
+        {{ post.venue }}
+      {% endif %}
+    </em>,
+    {{ post.date | date: "%Y" }}
+
+  {% else %}
+
     Published in 
     <em>
       <a href="{{ post.confurl }}" target="_blank" rel="noopener">
@@ -25,7 +42,10 @@ author_profile: true
       </a>
     </em>, 
     {{ post.date | date: "%Y" }}
-  </p>
+
+  {% endif %}
+
+</p>
 
   <!-- Authors -->
   {% assign authors = post.content | split: 'Authors:' | last | split: 'Abstract:' | first %}

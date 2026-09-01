@@ -10,9 +10,9 @@ main:
 
   - title: "Education"
     url: /education/
-    
+
   - title: "Awards & Honors"
-  url: /awards/  
-  
+    url: /awards/
+
   - title: "Leadership"
-    url:  /extracurricular/
+    url: /extracurricular/

@@ -239,6 +239,359 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Times New Roman", Times, serif !important;
   font-weight: 700;
 }
+/* =========================================================
+   GLOBAL MOBILE RESPONSIVE FIX
+   Desktop layout remains unchanged
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* =========================================
+     GLOBAL BOX SIZING
+     ========================================= */
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* =========================================
+     MASTHEAD / NAVIGATION
+     ========================================= */
+
+  .masthead {
+    width: 100%;
+  }
+
+  .masthead__inner-wrap {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px !important;
+  }
+
+  .greedy-nav {
+    width: 100%;
+    min-width: 0;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .site-title {
+    max-width: calc(100% - 55px);
+    margin-right: 0 !important;
+    font-size: 17px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /*
+   * IMPORTANT:
+   * The desktop custom CSS currently forces
+   * .visible-links to remain flex.
+   * On mobile, restore the theme's menu behavior.
+   */
+
+  .greedy-nav .visible-links {
+    display: none !important;
+  }
+
+  .greedy-nav .hidden-links {
+    display: block;
+  }
+
+  .greedy-nav .toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+
+  /* =========================================
+     PAGE WRAPPER
+     ========================================= */
+
+  .page {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .page__inner-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .page__content {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+
+  /* =========================================
+     SIDEBAR / AUTHOR PROFILE
+     ========================================= */
+
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sidebar__right {
+    width: 100%;
+  }
+
+  .author__avatar img {
+    max-width: 180px;
+    height: auto;
+  }
+
+
+  /* =========================================
+     HEADINGS
+     ========================================= */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .page__title {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .page__content h2 {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+
+  .page__content h3 {
+    font-size: 21px;
+    line-height: 1.35;
+  }
+
+
+  /* =========================================
+     TEXT / LINKS
+     ========================================= */
+
+  .page__content p,
+  .page__content li {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .page__content a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+
+  /* =========================================
+     IMAGES
+     ========================================= */
+
+  .page__content img {
+    max-width: 100% !important;
+    height: auto;
+  }
+
+
+  /* =========================================
+     PUBLICATIONS
+     ========================================= */
+
+  .page__content div[style*="display: flex"] {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 18px !important;
+  }
+
+  .page__content div[style*="display: flex"] img {
+    width: 100% !important;
+    max-width: 350px !important;
+    height: auto !important;
+  }
+
+  .page__content div[style*="display: flex"] > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: none !important;
+  }
+
+
+  /* =========================================
+     TEACHING
+     ========================================= */
+
+  .teach-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .teach-header {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px !important;
+    gap: 10px !important;
+  }
+
+  .teach-main {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .teach-role {
+    font-size: 17px !important;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+  }
+
+  .teach-institution {
+    font-size: 14px !important;
+  }
+
+  .teach-right {
+    flex-shrink: 0;
+  }
+
+  .teach-content {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .teach-image {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .teach-details {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .teach-details ul {
+    padding-left: 20px;
+  }
+
+
+  /* =========================================
+     AWARDS
+     ========================================= */
+
+  .awards-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    width: 100%;
+    gap: 18px !important;
+  }
+
+  .award-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .award-image {
+    width: 100%;
+    height: 210px !important;
+  }
+
+  .award-content {
+    width: 100%;
+    padding: 18px !important;
+  }
+
+  .award-title {
+    font-size: 18px !important;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+  }
+
+
+  /* =========================================
+     TABLES
+     ========================================= */
+
+  .page__content table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+  /* =========================================
+     CODE / PRE
+     ========================================= */
+
+  .page__content pre {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .page__content code {
+    overflow-wrap: break-word;
+  }
+
+
+  /* =========================================
+     LISTS
+     ========================================= */
+
+  .page__content ul,
+  .page__content ol {
+    max-width: 100%;
+    padding-left: 22px;
+  }
+
+
+  /* =========================================
+     BUTTONS
+     ========================================= */
+
+  .page__content .btn,
+  .page__content button {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+
+  /* =========================================
+     FOOTER
+     ========================================= */
+
+  .page__footer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
 
 /* Section headers inside content */
 .archive__item-title {

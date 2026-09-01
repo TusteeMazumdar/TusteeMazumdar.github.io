@@ -155,26 +155,4 @@ author_profile: true
 
 </div>
 
-<!-- ===============================
-     HONORS & AWARDS
-================================ -->
 
-<h2 class="section-title">Honors & Awards</h2>
-
-<div class="awards-clean">
-
-{% for award in site.data.awards %}
-  <div class="award-row">
-
-    <div class="award-left">
-      <div class="award-title">{{ award.title }}</div>
-    </div>
-
-    <div class="award-right">
-      {{ award.organization }}{% if award.year %} — {{ award.year }}{% endif %}
-    </div>
-
-  </div>
-{% endfor %}
-
-</div>

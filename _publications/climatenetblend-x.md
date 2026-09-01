@@ -8,6 +8,7 @@ paperurl: "#"
 confurl: "#"
 image: "/images/Screenshot 2026-09-01 133613.png"
 category: ongoing
+status: "Ongoing"
 ---
 
 Authors: Tustee Mazumdar, Adrika Chowdhury, Abu Nowshed Chy

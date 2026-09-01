@@ -50,8 +50,10 @@ author_profile: true
   <!-- Authors -->
   {% assign authors = post.content | split: 'Authors:' | last | split: 'Abstract:' | first %}
   {% assign authors_clean = authors 
-      | strip 
-      | replace: "Tustee Mazumdar", "<strong>Tustee Mazumdar</strong>" %}
+    | strip 
+    | replace: "^{*}", "<sup>*</sup>"
+    | replace: "^{}", ""
+    | replace: "Tustee Mazumdar", "<strong>Tustee Mazumdar</strong>" %}
       
   <p style="margin: 4px 0;">
     <strong>Authors:</strong> {{ authors_clean }}

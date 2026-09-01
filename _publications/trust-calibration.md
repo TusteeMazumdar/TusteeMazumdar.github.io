@@ -6,7 +6,7 @@ date: 2026-01-01
 venue: "HAIC @ NeurIPS 2026 (Human-AI Coevolution Workshop)"
 paperurl: "#"
 confurl: "https://neurips2026haic.com/"
-image: "/images/trust-calibration.png"
+image: "/images/Screenshot 2026-09-01 133133.png"
 category: conferences
 ---
 

@@ -17,10 +17,8 @@ Ultimately, I aspire to build **robust, trustworthy, and inclusive AI systems** 
 
 
 ## Recent News
-- <span style="color:#b30000;">[September 29, 2026]</span>  
-  Our paper, **[Trust Calibration in Healthcare AI Under Incomplete Information: A Thematic Narrative Review and Conceptual Framework](https://openreview.net/forum?id=48s9v6mYez)**, got accepted at **[HAIC @ NeurIPS 2026 (Human-AI Coevolution Workshop)](https://neurips2026haic.com/)**!
-- <span style="color:#b30000;">[September 25, 2026]</span>  
-  Released the **[HAI-TRUST healthcare AI scenario-bank dataset](https://doi.org/10.5281/zenodo.22855853)** on Zenodo to support research on trust calibration and human reliance on healthcare AI!
+- <span style="color:#b30000;">[September 29, 2026]</span>Our paper, **[Trust Calibration in Healthcare AI Under Incomplete Information: A Thematic Narrative Review and Conceptual Framework](https://openreview.net/forum?id=48s9v6mYez)**, got accepted at **[HAIC @ NeurIPS 2026 (Human-AI Coevolution Workshop)](https://neurips2026haic.com/)**!
+- <span style="color:#b30000;">[September 25, 2026]</span>Released the **[HAI-TRUST healthcare AI scenario-bank dataset](https://doi.org/10.5281/zenodo.22855853)** on Zenodo to support research on trust calibration and human reliance on healthcare AI!
 - <span style="color:#b30000;">[June 2026]</span>
   Joined the **[PRISM AI Safety Research Fellowship](https://prism-research.org/)** as an **AI Safety Research Fellow**, working on **Trust Calibration in Healthcare AI** under the mentorship of **Dr. Zeenath Reza Khan**.
 - <span style="color:#b30000;">[June 2026]</span>

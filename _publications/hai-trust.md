@@ -5,7 +5,8 @@ permalink: /publications/hai-trust
 date: 2026-09-25
 venue: "ICAMAC 2026 (3rd International Conference on Artificial Intelligence, Metaverse, and Cybersecurity)"
 paperurl: "https://doi.org/10.5281/zenodo.22855853"
-confurl: "https://YOUR-ICAMAC-CONFERENCE-LINK"
+confurl: "https://www.icamac.com/"
+image: "/images/HAI-TRUST.png"
 category: datasets
 status: "Published"
 ---
